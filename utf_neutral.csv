@@ -1,0 +1,1320 @@
+﻿thread_id,email_id,quotation,quotation_code,email_final_code
+498594,574882,It's a document targeted at system administrators and it definitely should not be burried somewhere in Documentation/x86.,neutral,civil
+498594,574882,On x86-32?,neutral,civil
+431048,432750,But first a general statement.,neutral,civil
+202437,191275,I preferred to offer source code adjustments according to specific transformation patterns mostly for each software module separately (also in small patch series).,neutral,civil
+168169,173259,Great find!,neutral,civil
+402510,413538,It wants a proper analysis and we need to come up with criteria which PMUs can be exposed at all.,neutral,civil
+331266,331355,What is this crazy union for?,neutral,civil
+541450,543076,In my mind this is no different than trying to run a program that allocates hugepages on a kernel that doesn't support hugepages (just to make up an example).,neutral,civil
+207400,208141,I may add platform data to support an older non-device-tree family of boards but it still would require I2C.,neutral,civil
+498594,770007,"Document clearly says that bug is fixed in non-virtualized cases, when in fact it depends on PAE and limited memory.",neutral,civil
+165657,169349,"And that output should not be Vulnerable"" like you force with the hack above.""",neutral,civil
+207400,208102,thanks for the review!,neutral,civil
+422694,423291,Adding some more context here.,neutral,civil
+377230,377461,They now have to wait for all the other reservations to make progress.,neutral,civil
+168060,169219,This does not make sense vs. the documentation:   This should say:   And I really have to ask whether this should be named _GLOBAL_ instead of _SHARED_.,neutral,civil
+245912,245953,Having #defines is frowned upon.,neutral,civil
+347183,348381,because it's getting late here.,neutral,civil
+289026,271213,I understood the concept of memcg.,neutral,civil
+402510,413698,"But this does also require a proper analysis and documentation why it is not a security risk to expose the i915 PMU or what potential security issues this can create, so that the competent sysadmin can make a judgement.",neutral,civil
+336834,337316,"As example, the original report doesn't say that the process which holds 'cpu_hotplug_lock.rw_sem' is different to the process which holds the other locks.",neutral,civil
+221804,221853,"With Best Regards,",neutral,civil
+152625,156500,"So I hate this rst crap with a passion, so NAK from me.",neutral,civil
+289026,294078,"Although my memcg knowledge is extremely limited, memcg is accounting for various kinds of pages obtained from the buddy pool by the task belonging to it.",neutral,civil
+391895,397297,"Note that in order to avoid PLE and paravirt spinlocks and paravirt tlb-invalidate you have to gang-schedule the _entire_ VM, not just SMT siblings.",neutral,civil
+245912,245922,Then what ?,neutral,civil
+289026,294078,I apologize for having confused.,neutral,civil
+391895,397297,"That is the whole and only reason you did this, and it doesn't even begin to cover the requirements for it.",neutral,civil
+239101,240255,I'll be pretty frustrated if you submit v2 that is blind to the kinds of changes I made.,neutral,civil
+410867,414489,"Even though the return type of ndo_start_xmit is netdev_tx_t, negative error codes are still allowed I believe.",neutral,civil
+331266,331355,Why are you doing it this way and not using an attribute group?,neutral,civil
+391895,397649,"If coscheduling of a larger fraction of the system is required, costs increase.",neutral,civil
+202437,505099,"Actual bug fixes (like the null pointer patch in this series) can still be posted as separate patches, but cleanups shouldn't.",neutral,civil
+170193,170197,Which leads me to wonder: what is this document for?,neutral,civil
+239101,240255,"Also, I fixed some issues I saw in error paths, and lots of formatting.",neutral,civil
+391895,397649,"Assuming, there is a cgroup-less solution that can prevent simultaneous execution of tasks on a core, when they're not supposed to.",neutral,civil
+222860,223039,"Hi,    How many times are we going to allow copy-and-pasting the same driver?",neutral,civil
+169133,177084,"The timer is supposed to restart the protocol again, that's how this whole thing is designed to work.",neutral,civil
+402510,413768,"Well it's not a pony, it is mechanism to avoid having to turn off all  security.",neutral,civil
+399771,401526,"If rtnl_trylock() can not grab RTNL,  there is no way the current thread can set the  variable without a race, if the word including rtnl_needed is shared by other fields in the structure.",neutral,civil
+266017,266025,What actually took so long?,neutral,civil
+402510,414266,I said clearly that I'm not opposed against making it configurable.,neutral,civil
+377230,377461,That means filesystem shutdowns will just hang the filesystem and leave it unmountable.,neutral,civil
+372597,372959,"Please fix this, email a test patch to yourself, and do not resend the patch to this mailing list until you can successfully extract and cleanly apply the test patch you email to yourself.",neutral,civil
+346223,347267,"In other words, I'm trying to understand how much benefit this patchset will provide to our users as a whole.",neutral,civil
+391895,397297,The task timeline isn't the same on every CPU because of those.,neutral,civil
+498594,574882,Quoting yourself:   Where is the explanation for the 'really big 64bit systems' issue for correctness sake?,neutral,civil
+259276,259299,The one you've picked on is in the init path so it won't affect the runtime in any way.,neutral,civil
+245912,245953,All of this code is for debugging only.,neutral,civil
+377230,377461,"On a correctly configured system, we should almost never use this slow path....",neutral,civil
+261866,263843,"For example, I/O requests for one card/slot can then starve I/O requests reaching another card/slot.",neutral,civil
+476403,477136,We're not assigning 'bool' to 0/1 but the other way around.,neutral,civil
+402510,413698,And the same is required for all other PMUs which can be enabled in the same way for unprivileged access.,neutral,civil
+180488,180837,"Michal Hocko wrote:  Then, I am wondering why we are holding mmap_sem when calling migrate_pages() in existing code.",neutral,civil
+467091,471458,Come on!,neutral,civil
+377230,377461,"IOWs, we can't restart this loop without first having guaranteed the ticket is not already on the ticket queue.",neutral,civil
+258997,259513,I didn't get such warnings from 0-day.,neutral,civil
+216128,216133,What tree is this against?,neutral,civil
+266279,267299,"So, I'm wondering if are there any way to mitigate it inside the  core itself, instead of doing it on every driver, e. g. changing v4l_enum_fmt() implementation at v4l2-ioctl.",neutral,civil
+222860,223021,...wait a second...this looks like it's a u-boot driver.,neutral,civil
+245912,245922,"tjmax is also reported as temp_crit cputemp_read_die(), for example.",neutral,civil
+498594,590551,And what is a recent -stable kernel?,neutral,civil
+467091,479249,If you want.,neutral,civil
+174735,199701,This looks like a MASSIVE code duplication.,neutral,civil
+521470,533953,"Looks like the cros_* family is increasing quickly lately (cros_ec, cros_pd, cros_scp, cros_ish, cros_fp ...) and I am wondering if we are really doing well all this.",neutral,civil
+391895,397649,"Is this the level of optimizations, you're thinking about?",neutral,civil
+289026,271213,I do not see anything like that.,neutral,civil
+391895,397649,The scheduling decision does not cause any lock contention by itself.,neutral,civil
+245912,245922,Please use bool.,neutral,civil
+402510,413778,Making the knob opt in per PMU does not need all PMU owners to be involved.,neutral,civil
+467091,471421,"Sorry, with the proliferation of sensors I cannot see a multi master  sensor network based on USB.",neutral,civil
+422694,423291,"Yes, I'm annoyed by mindless changes.",neutral,civil
+170193,188745,"[...]   ok   ok, this is all new stuff to me ...",neutral,civil
+202437,505099,"Just so you know, I'll reject any future patch series that do not follow these rules.",neutral,civil
+498594,590551,It's not about detailed limits for particular systems.,neutral,civil
+210458,210463,"Wait, clang does not have that?",neutral,civil
+202437,513970,* Will you accept increasing risks because of bigger patch sizes?,neutral,civil
+169133,179802,"Ideally, I think the negotiation failure should end up (optionally, in addition to the current behavior) in some configurable sleep, then the negotiation should restart.",neutral,civil
+331266,331355,Why are you using a custom device class for a single device?,neutral,civil
+266279,266313,"Usually, it doesn't require any special privilege to call this ioctl, but, even if someone changes its permission to 0x400, a simple lsusb output is enough to know what hardware model is there.",neutral,civil
+378505,379417,Can you please re-run and report the results for each patch on the ramdisk setup?,neutral,civil
+174735,174850,Are you moving checks from the core subsystem to drivers ?,neutral,civil
+331266,331355,"You aren't adding"" any attributes here  you are only setting them up (in an odd way  see below...)   That's an oddly-hard-coded array size for no good reason :(    This works?""",neutral,civil
+402510,413650,Who would you recommend I add?,neutral,civil
+391895,397649,I did look over much of that research.,neutral,civil
+476403,477115,Anybody that has trouble with 0/1 vs false/true needs to stay the heck away from C.  I would suggest we delete that stupid coccinelle scripts that generates these pointless warns.,neutral,civil
+245912,245953,I find this hard to read.,neutral,civil
+207400,207934,But maybe you could expended the core mux code to allow the i2c_mux_core structure to contain a transfer function?,neutral,civil
+402510,413768,"did not bother = negative connotations ""ignored"" = negative connotations  Note instead the time lapse between this and previous posting of the  series  and if you want to assume something assume things can get  missed and forgotten without intent or malice.",neutral,civil
+207400,207934,Cool.,neutral,civil
+245912,245953,This interrupt is only for the peci device.,neutral,civil
+402510,413768,Wrong attitude what?,neutral,civil
+498594,574882,The 'Affected processors' section right below this is very clear about this being an Intel only issue (for now).,neutral,civil
+210458,210459,"So this is a case of the compiler trying to be smarter than it really is, and getting things totally wrong :(  Has anyone reported this to the clang developers?",neutral,civil
+391895,397297,"The cgroup stuff needs cleanups and optimization, not this.",neutral,civil
+266279,267299,"Btw, on almost all media drivers, the implementation for enumerating the supported formats are the same (and we have a few other VIDOC_ENUM_foo ioctls that usually do similar stuff): the V4L2 core calls a driver, with looks into an array, returning the results to the core.",neutral,civil
+245912,245922,One set of ( ) is unnecessary on each side of the expression.,neutral,civil
+169133,204633,"Do not use attachments to fix this problem, the patch must be inline after your commit message and signoffs.",neutral,civil
+245912,245922,Shouldn't this result in probe deferral or something more useful instead of just being ignored ?,neutral,civil
+402510,414266,And that's all I'm asking for aside of making it opt-in instead of a wholesale expose everything approach.,neutral,civil
+346223,347267,"Can we instead simplify their lives by providing better documentation or informative printks or better Kconfig text, etc?",neutral,civil
+152625,157636,"Hi,  Thanks for the details.",neutral,civil
+541450,542126,"I get wanting to support running applications built for newer kernels on older kernels, but thats just not something that we do, and to say thats broken is misleading.",neutral,civil
+202437,745390,Would you like to answer my still remaining questions in any more constructive ways?,neutral,civil
+306145,317171,Look at what mmd_phy_indirect() does.,neutral,civil
+336834,337316,It's likely because you infer about certain aspects which are not clearly stated in the deadlock report.,neutral,civil
+169133,179802,"On the other hand, perhaps applying it as is and forgetting about the issue is the way to go.",neutral,civil
+424089,424518,And presumably there will be decent benefits to whoever is actually using this code.,neutral,civil
+482005,482038,"How about grabbing the references to all victims (*before* screwing with ksys_close()), sticking them into a structure with embedded callback_head and using task_work_add() on it, the callback doing those fput()?",neutral,civil
+266279,266313,"Even assuming that the OS doesn't have lsusb, that /proc is not mounted, that /dev/video0 require special permissions, that the potential attacker doesn't have physical access to the equipment (in order to see if an USB board is plugged), etc... What possible harm he could do by identifying a hardware feature?",neutral,civil
+377230,377461,Hence leaving it out of the loop you put below will cause the journal to get stuck in the spurious wakeup loop below and be unable to make progress.,neutral,civil
+202437,513970,* Are you looking for further improvements around development tools   like patchwork and quilt?,neutral,civil
+431048,432750,I do not understand the patch wording to address this at all.,neutral,civil
+202437,505099,I'll take the Fix a possible null pointer patch since it is an actual bug fix  but will reject the others  not just this driver but all of them that are currently pending in our patchwork ().,neutral,civil
+377230,377461,Why do you need to delete the ticket from the queue here?,neutral,civil
+402510,413538,CC'ed now.,neutral,civil
+391895,397297,"Such things (gang scheduling VMs) _are_ possible, but not within the confines of something like CFS, they are also fairly inefficient because, as you do note, you will have to explicitly schedule idle time for idle vCPUs.",neutral,civil
+377230,377461,The current code only wakes up enough waiters to consume the newly available space and it queues new waiters to the tail of the queue.,neutral,civil
+402510,413698,And we might as well come to the conclusion via analysis that for some PMUs unpriviledged access is just not a good idea and exclude them.,neutral,civil
+391895,397649,"What I didn't like about many of them, is that evaluation is based on a prototype that -- while making the point that coscheduling might be beneficial for that use case -- totally screws over the scheduler for any other use case.",neutral,civil
+168169,173259,"I think introducing a single parameter that controls both CG, PG, and automatic reclocking would be safer.",neutral,civil
+498594,573990,Same is true for for really big 64bit systems.,neutral,civil
+377230,377461,This leads to landmines and incorrect non-FIFO behaviour...   .... here.,neutral,civil
+498594,573986,Huch?,neutral,civil
+467091,471458,I think you didn't read my reply carefully.,neutral,civil
+314071,314224,"I have a similar patch in the VFS in Google's internal data center kernel, as well as an internal patch which implements support for this flag in ext4.",neutral,civil
+391895,397649,"Yes, I do.",neutral,civil
+289431,289688,We wouldn't want to record that again at syncfs time.,neutral,civil
+167856,174594,That's why I try to add the bias support.,neutral,civil
+210458,210463,"confused,",neutral,civil
+467091,479249,Yes.,neutral,civil
+347183,348381,Anyway-that's why your explanation doesn't make sense: the deadlock is happening because we're calling pm_runtime_get_sync().,neutral,civil
+202437,191235,Do you need any additional development resources?,neutral,civil
+289026,271213,"adjust_pool_surplus is simply and  As you said, my patch did not consider handling when manipulating the pool.",neutral,civil
+207400,208141,"No, at this point it requires both I2C and OF.",neutral,civil
+266017,266029,"Well, I am not sure.",neutral,civil
+368515,368789,There is simply not enough support in /proc/PID/maps or smaps to get this information.,neutral,civil
+245912,245922,There is a lot of duplication in those functions.,neutral,civil
+258997,260189,Can you fix it correctly by replacing the 'switch' by a 'if' instead of adding dead branches to please gcc?,neutral,civil
+422694,423291,"You must have noticed that this  was the end of a continued sentence, as you even quoted it in the commit  message.",neutral,civil
+239101,240572,"I also noted that reqdata_arr[b].req was not released properly, this is also fixed.",neutral,civil
+391895,397649,No need to touch each and every task.,neutral,civil
+391895,397649,As I said in the text you quoted: coscheduling comes with its own set of advantages and disadvantages.,neutral,civil
+170193,188745,ok   I'll move it to the Use section.,neutral,civil
+402510,413698,opt in and not opt out.,neutral,civil
+289431,292003,"So to return errors correctly, xfs_fs_sync_fs() needs to capture errors from the log force (i.e.",neutral,civil
+221804,221853,Noise.,neutral,civil
+245912,245922,What if nothing is found ?,neutral,civil
+245912,245922,"Am I missing something, or is the same temperature reported several times ?",neutral,civil
+498594,574882,"For further correctness, this needs to mention that !PAE enabled kernels cannot do PTE inversion at all.",neutral,civil
+391895,397649,"Just because you find one example, where it is a bad idea, doesn't make it a bad thing in general.",neutral,civil
+173287,173288,To share the lock you will need to provide unlocked versions of the read and write functions and use those if the lock has already been taken.,neutral,civil
+165657,169349,I really don't like fiddling with that variable.,neutral,civil
+289431,292003,Where did this come from?,neutral,civil
+165657,169349,It actually should tell WHY it is vulnerable despite having had protection in place before the module was loaded.,neutral,civil
+498594,573990,3GB system running 32bit kernel is not protected.,neutral,civil
+346223,347267,Random system administrators?,neutral,civil
+498594,574882,What is the advertisement part again?,neutral,civil
+289026,292839,Just look at what [sw]hould when you need to adjust accounting - e.g.,neutral,civil
+422694,423291,"Considering the above added context, I have to say that this mindless  change is not an improvement, as you have just destroyed the continued  sentence from the previous comment.",neutral,civil
+402510,413650,"Because  incompetent sysadmin will turn it off for some PMU, while without having  the fine-grained control they wouldn't turn it off globally?",neutral,civil
+467091,479249,"You think your DW IP is so complex and configurable that it requires several source files, fine, but please don't force others to do the same.",neutral,civil
+303621,305468,The SPDX header is explicitly here to remove the license text and create a tag that is in a indirect reference to the license text in LICENSES.,neutral,civil
+424089,424518,Most important architectures appear to define __HAVE_ARCH_MEMCMP.,neutral,civil
+391895,397649,"Hence, once you    have a relatively stable situation, lock contention is not an issue.",neutral,civil
+289026,291846,"This series would allow surplus pages to be accounted for in the default  memory controller, or the hugetlb controller or both.",neutral,civil
+207400,208102,I am using request_threaded_irq with thread_fn with thread_fn (vs handler).,neutral,civil
+498594,573986,Care to tell what's a lie instead of making bold statements?,neutral,civil
+202437,513970,I guess that this handling will trigger more communication challenges.,neutral,civil
+266279,267299,"), and, for every new one, to take care to avoid introducing it again during patch review process.",neutral,civil
+391895,397649,Or do you want to throw away the whole nested CFS RQ experience in the code?,neutral,civil
+391895,394633,__switch_to_asm+0x34/0x70 [  144.783317]  ?,neutral,civil
+169133,193114,"Ideally, I think the negotiation failure should end up (optionally, in addition to the current behavior) in some configurable sleep, then the negotiation should restart.",neutral,civil
+170193,170197,"Most of the people reading it are likely wanting to learn how to *use* this API, I think it would be best to not leave them frustrated.",neutral,civil
+152625,156871,"Not perfect, but a first solution.",neutral,civil
+541450,543076,Thats correct behavior.,neutral,civil
+467091,471421,"Yes, we already talked about secondary master support.",neutral,civil
+391895,397297,"It is after all, perfectly possible to run a kvm thingy without cgroups.",neutral,civil
+402510,413698,"Sure, and this wants to be documented in the cover letter and the changelogs.",neutral,civil
+245912,245922,How does this make sense ?,neutral,civil
+498594,576302,"I initally used less strong words, only to get Care to tell what's a lie instead of making bold statements?",neutral,civil
+289026,271213,"As you said, it must be an alien.",neutral,civil
+289026,292549,Well such a usecase requires an explicit configuration already.,neutral,civil
+165657,169349,This really can be done in a cleaner way.,neutral,civil
+169133,179802,"I remember the PPP standard is a bit cloudy about the possible issue, but the latter indeed exists (the PPP state machine was written directly to STD-51).",neutral,civil
+498594,576302,"The kernel ensures that the address bits of PTEs, which are not -   marked present, never point to cacheable physical memory space.",neutral,civil
+266279,266313,Please enlighten me: how do you think this could be exploited?,neutral,civil
+168169,173259,Thanks a lot for all this work!,neutral,civil
+377230,377461,"I see other places in the transaction subsystem that are hot (e.g the CIL context lock), but not the space reservations.",neutral,civil
+170193,188745,I will add a reference to the selftest file.,neutral,civil
+374095,374559,Please use your real name.,neutral,civil
+254985,255085,Thanks!,neutral,civil
+258997,260193,However could we please defer this to v4.17 and merge the current set of Exynos thermal fixes/cleanups (they simplify the driver a lot and make ground for future changes)?,neutral,civil
+307410,349339,So the change you propose will actually break the how it was designed.,neutral,civil
+431048,432750,This phrase specifies which email addresses can be published.,neutral,civil
+498594,574206,"If you can get that, and preferably resubmit with a less condescending changelog, I can pick it up.",neutral,civil
+541450,542126,"Older applications are required to run on newer kernels, but not vice versa, which is what you are asking for.",neutral,civil
+159308,177720,The second for the KVM 'make SError pending' API.,neutral,civil
+202437,505193,I would appreciate further indications for a corresponding change acceptance.,neutral,civil
+169133,193114,"On the other hand, perhaps applying it as is and forgetting about the issue is the way to go.",neutral,civil
+391895,397649,"The current one, is what I considered most suitable among some alternatives under the premise I was working: integrate coscheduling in a scheduler as an additional feature (instead of, eg, write a scheduler capable of coscheduling).",neutral,civil
+498594,590551,Care to check how pte_present() is implemented across the architectures?,neutral,civil
+258997,260193,I'm not the one that added this switch statement (it has been there since 2011) and I would be happy to remove it.,neutral,civil
+467091,471421,If you prefer later I'm ok with that.,neutral,civil
+521470,533953,personally I have some concerns.,neutral,civil
+346223,347267,Is that sufficient?,neutral,civil
+261866,263843,"Sorry, but this is a hack to *try* to make multi-slot work and this isn't sufficient.",neutral,civil
+289026,292549,I do not really think this is a good idea.,neutral,civil
+402510,413768,"Sure, but you also used the word pile and I would argue that made the  rest of your sentence  after and including ""instead""  sound like it not  only bothers you I forgot to Cc people on the cover letter  but it also  bothers you I included a ""pile"" of my own addresses.",neutral,civil
+207400,208102,ok   can you point me to an example dts/driver?,neutral,civil
+391895,397649,"That said, it is not as bad as you make it sound for the following three reasons:  a) The amount of CPUs that compete for a lock is currently governed by the    cosched_max_level command line argument  making it a conscious decision to    increase the overall overhead.",neutral,civil
+239101,240255,BUT please do note that the patches I pushed to linux-dm.git were rebased on top of the 'check_at_most_once' patch.,neutral,civil
+402510,413538,I don't see anyone Cc'ed on the whole series.,neutral,civil
+266017,266029,"Could you please give me hints, how to debug this  further?",neutral,civil
+347183,349692,"If there are functions which are called from drm_dp_mst_link_probe_work() as well as from other contexts, and those other contexts need a runtime PM ref to be acquired, you need to acquire the runtime PM ref conditionally on not being drm_dp_mst_link_probe_work() (using the current_work() technique).",neutral,civil
+377230,377461,"If you see lots of them, it's typically a sign of an inappropriately configured filesystem for the workload being run.",neutral,civil
+377230,377461,correctness) requires FIFO ticket ordering behaviour be maintained.,neutral,civil
+245912,245953,"Given the regmap_read is always going to be a memory read on the aspeed, I can't think of a situation where the read will fail.",neutral,civil
+377230,377461,"This breaks the guarantees of ordered forward progress the grant queue provides permanent transaction reservations and hence opens us up to log space deadlocks because those transactions can't move their objects forward in the log to free up space in the log...  Also, I note that wake_q_add() assumes that the wake queue is a local stack object and so not subject to concurrency - it explicitly states this in the code.",neutral,civil
+391895,397649,I'll have to read up some more code to make a qualified statement here.,neutral,civil
+391895,397297,You now basically require steal time and IRQ load to match between CPUs.,neutral,civil
+541450,543076,"At issue is the size of the structure sctp_event_subscribe, and the fact that in several instances over the last few years, its been extended to be larger and encompass more events to subscribe to.",neutral,civil
+498594,573990,"If I do what dmesg suggests, this becomes untrue:  # The Linux kernel contains a mitigation for this attack vector, PTE # inversion, which is permanently enabled and has no performance # impact.",neutral,civil
+347183,349692,Why isn't that == ?,neutral,civil
+336834,337316,"Without doing some mental diffs between the backtraces, it's not possible to see the chronological order of consuming the locks.",neutral,civil
+347183,349692,This means that you don't have to acquire any runtime PM references in or below drm_dp_mst_link_probe_work().,neutral,civil
+541450,543076,This works fine for the same reason as (1).,neutral,civil
+402510,413768,I did not mention Google.,neutral,civil
+168169,173259,"As far as I understand, you only have per-engine control whether you want to enable CG or not.",neutral,civil
+374095,374559,1st Signed-off-by and patch author should match.,neutral,civil
+347183,348381,If we were to make that call conditional (e.g.,neutral,civil
+391895,397649,"With respect to the need of cleanups and optimizations: I agree, that task groups are a bit messy.",neutral,civil
+245912,245953,"If you decide that you do need to probe here, please add a comment.",neutral,civil
+498594,590551,That's truly important because its widely deployed in the cloud space and elsewhere.,neutral,civil
+266918,269136,"Sorry for the annoyance,",neutral,civil
+391895,397297,IOW it's completely friggin useless for L1TF.,neutral,civil
+202437,191235,Do any contributors get into the mood to take another look at software updates from my selection of change possibilities in a more constructive way?,neutral,civil
+476403,478120,"We muck with hardware, we'd better know how the heck",neutral,civil
+467091,479249,It depends what you do with those source files.,neutral,civil
+391895,397649,"This patch set should just"" give the user the additional ability to coordinate scheduling decisions across multiple CPUs.""",neutral,civil
+210458,210459,"Wait, what?",neutral,civil
+539613,546296,Now they look a bit weird.,neutral,civil
+170193,170197,This seems like a relevant and important aspect of the API that shouldn't be buried in the middle of a section talking about random things.,neutral,civil
+258997,259513,I'm really sorry for this.,neutral,civil
+245912,245953,"If not, putting a sleep in the _probe will hold up the rest of drivers from being able to do anything, and hold up boot.",neutral,civil
+174735,199976,It is source code duplication.,neutral,civil
+402510,413768,If that wasn't your  intention in the slightest then I apologise for misreading it.,neutral,civil
+169133,193114,"Anyway, this issue have to be fixed.",neutral,civil
+377230,377461,Where's the hunk context in your headers?,neutral,civil
+336834,337316,I still hope that I can get some feedback from community regarding the actual cpufreq-related issue pointed out in the splat.,neutral,civil
+377230,377461,This doesn't generally doesn't happen because the space accounting tends to prevent multiple wakeups.,neutral,civil
+336834,337316,there is no clue what is the time/point of acquiring 'cpu_hotplug_lock.rw_sem' relative to the other locks.,neutral,civil
+498594,573990,"The kernel ensures that the address bits of PTEs, which are not -   marked present, never point to cacheable physical memory space.",neutral,civil
+152625,156871,I think that's a pity.,neutral,civil
+378505,379417,"And, please, include the mkfs.xfs or xfs_info output for the ramdisk filesystem so I can see /exactly/ how much concurrency the filesystems are providing to the benchmark you are running.",neutral,civil
+202437,505099,Just use common sense when posting these things in the future.,neutral,civil
+402510,413650,"As such,  for this specific use case at least, the security is increased.",neutral,civil
+431048,432750,(They usually plan to share it with the world for their financial benefit.),neutral,civil
+368515,368789,Having a CODE_PAGE_SIZE is therefore useful.,neutral,civil
+245912,245922,Does this mean there will be an error message for each non-supported CPU ?,neutral,civil
+245912,245922,There is again a lot of duplication in those functions.,neutral,civil
+168169,173259,"What you call BLCG and SLCG levels just mean don't use the boot values  but rather use our values (taken from nvidia)"".""",neutral,civil
+167856,174594,"As a consequence of enabling strict mode, I have to find another way to configure the pins.",neutral,civil
+210458,210461,Q: What is the most annoying thing in e-mail?,neutral,civil
+431048,432750,I can put an email address in a tag _if_ it is ordinarily collected by the project,neutral,civil
+245912,245953,"Again, a memory mapped read won't fail.",neutral,civil
+402510,414000,The channels always exist in form of timing variances for any shared resource (like shared caches or shared memory/IO/interconnect bandwidth) that can be measured.,neutral,civil
+391895,397297,"There are known scalability problems with the existing cgroup muck, you just made things a ton worse.",neutral,civil
+202437,191241,"I prefer the first approach, but it's up to you.",neutral,civil
+391895,397649,"That is, if you have tuned the scheduler to your workload or your workload depends on some CFS feature to work efficiently (whether on purpose or not), then running with this patch set should not change the behavior of said workload.",neutral,civil
+431048,432750,"building linux"" is not the patch wording.""",neutral,civil
+541450,543076,4) Application is built against kernel B and run on kernel A.,neutral,civil
+467091,479249,"If they are to be exposed directly as modules, then they should be prefixed (i3c-<role>-<vendor>.c).",neutral,civil
+261866,263843,"However, inventing a mmc bus lock would lead to other problems related to I/O scheduling for upper layers - it simply breaks.",neutral,civil
+202437,196318,Can you handle bigger patches really better than similar patch series?,neutral,civil
+174735,199600,in security-sensitive code?,neutral,civil
+207400,208102,I'll propose something like the following in v2 right - thanks!,neutral,civil
+222860,230472,"FYI, previously, the same defconfig was used for all  STM32F7 boards (ie /stm32f746-disco_defconfig).",neutral,civil
+245912,245953,Why is it marked as shared?,neutral,civil
+368515,368789,This is important to improve code and data layouts.,neutral,civil
+402510,413650,It is simply a  question of what I have in .gitconfig vs what I forgot to do manually.,neutral,civil
+202437,191275,It is usual that integration of update suggestions will take some time.,neutral,civil
+377230,377461,"Ok, what about xlog_grant_head_wake_all()?",neutral,civil
+391895,397297,'some additional lock contention' doesn't even begin to describe that horror show.,neutral,civil
+202437,513970,Our common sense seems to be occasionally different in significant ways.,neutral,civil
+222860,223039,"(IOW, I would say over my dead body  but I have no power here.)",neutral,civil
+207400,208159,"will fix   will fix   will do   could also return -EINVAL but not with the args I'm passing in so I'll change it to: return PTR_ERR_OR_ZERO(hwmon),  Thanks!",neutral,civil
+391895,397297,Have you actually read your own code?,neutral,civil
+422694,423291,"TL,DR, if you are desperate to fix the problem"" with this fall through  comment  please do so in a way that preserves overall readability.""",neutral,civil
+245912,245916,"As per the in-kernel documentation, I am now allowed to make fun of you.",neutral,civil
+377230,377461,"That's not the case here - the wake queue is part of the grant head, and so is subject to extreme concurrency that is tempered by a spin lock.",neutral,civil
+331266,331847,Thanks.,neutral,civil
+541450,541515,"Given that the structure has already been extended several times, there is pretty much nothing to keep this from happening again and again.",neutral,civil
+289026,292549,If you need a greater flexibility then just do not use hugetlb at all and rely on THP.,neutral,civil
+424089,424518,What the heck does __visible do?,neutral,civil
+289026,271213,"Thanks to the interaction up to here, I understood that my solution is inappropriate.",neutral,civil
+391895,397297,"Also, I think you're sharing a cfs_rq between CPUs:  +       init_cfs_rq(&sd->shared->rq.cfs),  that is broken, the virtual runtime stuff needs nontrivial modifications for multiple CPUs.",neutral,civil
+266279,266313,"In the specific case of tm6000, all hardware supports exactly the same formats, as this is usually defined per-driver.",neutral,civil
+289026,294078,"I could not understand the intention of this question, sorry.",neutral,civil
+289431,289688,We really do need to record it in the superblock as soon as possible after an error occurs.,neutral,civil
+391895,397649,"If someone doesn't need it, they don't have to use it.",neutral,civil
+476403,477136,What crap..,neutral,civil
+391895,397297,The per-cpu IRQ/steal time accounting for example.,neutral,civil
+336834,337035,And all that for data that I've never needed and never even considered useful when looking at lockdep output.,neutral,civil
+245912,245922,Would it be possible to find common code and use functions for it instead of duplicating everything several times ?,neutral,civil
+258997,259457,"If people don't care enough about their code to even check the warnings, I'm not going to waste one second pulling the resulting garbage.",neutral,civil
+307410,311549,This is fixing a regression that broke previously working code in the only sensible way I can come up with.,neutral,civil
+165231,165261,"How about adding an additional patch on top taking into account the ignore_children flag and folding that into the series, kind of as you also suggested?",neutral,civil
+365796,367764,"Some description will be needed for sure, but I don't expect it to be overwhelmingly lengthy.",neutral,civil
+377230,377461,"At minimum, I need to see the output of the xfs_info command on your test filesystem.",neutral,civil
+391895,397649,":) For example, it is still possible to set affinities, to use nice, and to tune all the other existing CFS knobs.",neutral,civil
+169133,177084,I think you are making changes to the symptom rather than the true cause of the problems you are seeing.,neutral,civil
+377230,377461,"hence we only care about correctness in this path, not performance optimisation.",neutral,civil
+402510,413538,Just throwing magic knobs at sysadmins and then saying 'its their problem to figure it out' is not acceptable.,neutral,civil
+378505,378562,"Without that information, we have no idea what the slow path impact on peformance actually is, and whether it is worth persuing optimising slow path behaviour that very, very few production environments see lock contention in....",neutral,civil
+202437,191241,"One last time: either post per-driver patches with all the cleanups for a driver in a single patch, or a per-directory patch (drivers/media/pci, usb, etc) doing the same cleanup for all drivers in that directory.",neutral,civil
+202437,505195,"Yes, and you were told not to do it like that again.",neutral,civil
+347183,349692,Communication with an MST hub exceeding the autosuspend timeout is just one scenario where this bug manifests itself.,neutral,civil
+216128,216130,Can you possibly send the entire series again and CC all patches to linux-acpi and fix the kbuild warnings if the are relevant for that matter?,neutral,civil
+498594,574882,Also it has nothing to do with the bit-width of the hardware.,neutral,civil
+571417,571702,I'm hoping this will greatly reduce the risk of future leakage.,neutral,civil
+221804,221853,Hmm... Can't you use devm_ioremap_resources() to get the virtual address for I/O ?,neutral,civil
+467091,471458,Looks like there's a misunderstanding here.,neutral,civil
+391895,397649,"In this patch set, the scheduling of idle time is merely"" a quirk of the implementation.""",neutral,civil
+289431,289688,I'm not sure I understand what you intend here.,neutral,civil
+541450,543076,Nominally an application will use this structure (roughly) as follows:,neutral,civil
+266918,267111,"Also, please fix the indentation of the functions whose arguments span multiple lines as has been pointed out to you in patch feedback.",neutral,civil
+422694,423291,"So, this paragraph  is not describing the change.",neutral,civil
+365796,367764,IMHO having all the LED class device related configuration in one place simplifies the analysis.,neutral,civil
+347183,349692,It doesn't because the call to pm_runtime_get_sync() is not happening in output_poll_execute() but in drm_dp_mst_link_probe_work().,neutral,civil
+245912,245922,Is this include needed ?,neutral,civil
+289026,292549,So I would argue that you have quite a good knowlege of the setup.,neutral,civil
+377230,377461,That's a new nested loop.,neutral,civil
+541450,543076,The kernel simply operates on the options available in the buffer.,neutral,civil
+365796,367116,This I can fix it should be a value between 1 and 6    --  ------------------,neutral,civil
+498594,576302,Making it very clear from the begining this is x86-only issue.,neutral,civil
+365796,367690,Hi!,neutral,civil
+266279,266313,"When an application calls VIDIOC_ENUM_FMT from a /dev/video0 device, it will just enumerate a hardware functionality, with is constant for a given hardware piece.",neutral,civil
+467091,471458,Do you deny that?,neutral,civil
+169133,179802,"If it's worth the effort at this point, I don't know.",neutral,civil
+336834,337316,The patch mostly shares my personal experience of trying to make sense of lockdep output.,neutral,civil
+541450,543076,"Assume this code will be built and run against kernel versions A and B, in which: A) has a struct sctp_event_subscribe with a size of 9 bytes B) has a struct sctp_event_subscribe with a size of 10 bytes (due to the added field sctp_sender_dry_event)  That gives us 4 cases to handle  1) Application build against kernel A and run on kernel A.",neutral,civil
+498594,576302,"Next sentence speaks about present bit"" of ""page table entry"".""",neutral,civil
+167856,174594,These pins were configured with bias-pull-up.,neutral,civil
+498594,770007,"Actually, I still call it a lie.",neutral,civil
+358863,358900,"First of all, 	* none of ->actor() callbacks will ever get called directly.",neutral,civil
+383199,392690,"Also, all your patches have the whitespace turned from tabs into spaces, making them impossible to be applied even if I wanted to :)",neutral,civil
+347183,348381,We can enable  displays now!,neutral,civil
+347183,349692,"So it looks like drm_dp_mst_link_probe_work() can only ever run while the GPU is runtime resumed, it never runs while the GPU is runtime suspended.",neutral,civil
+307410,349339,I took a closer look at this and it's not necessary.,neutral,civil
+245912,245922,cancel_delayed_work_sync() ?,neutral,civil
+239101,240255,"I never did get an answer about how the sg array is free'd in certain error paths (see FIXME:"" in the 2nd patch).""",neutral,civil
+169133,179802,"There is related (more visible in practice, though we aren't affected) issue of active"" vs ""passive"" mode (hdlc_ppp.c is ""active""  and two ""passives"" wouldn't negotiate at all).""",neutral,civil
+259276,259299,The driver is filled with mdelay()s for this reason.,neutral,civil
+347183,348381,"As for whether or not this patch is even the right solution, I will need to confirm that tommorrow (if you don't think it is still, please feel free to say so!)",neutral,civil
+202437,513970,* Can such an information lead to differences in the preferred patch granularity?,neutral,civil
+266017,266025,Could you analyze further instead of blindly putting the flag?,neutral,civil
+170193,188745,Replies inlined below.,neutral,civil
+391895,397649,b) The runqueue locks are usually only taken by the leader of said runqueue.,neutral,civil
+541450,541515,"The patch is going into the latest, but can also be backported on future stables.",neutral,civil
+165657,169349,These newlines are there to separate stuff for readability sake.,neutral,civil
+402510,413768,I am happy to work on the mechanics of achieving this once the security  guys and all PMU owners get involved.,neutral,civil
+498594,770007,"I tried to be helpful and submit a patch, but I don't feel like you are cooperating on getting the patch applied.",neutral,civil
+261866,263843,"To make that work, we would need a mmc bus lock"" to be managed by the core.""",neutral,civil
+498594,590551,And that can be deduced from the code.,neutral,civil
+422694,423291,Especially mindless changes aimed  at improving readability while in fact making things less readable.,neutral,civil
+331266,331694,"Yes the individual patches aren't yet at the level of polish for a formal submission, we (naively ?)",neutral,civil
+346223,347267,Linux distro engineers?,neutral,civil
+377230,377461,"AFAICT the patch changes the spurious wakeup behaviour - it requeues tasks to the tail of the queue if there wasn't space available when they are woken, rather than leaving them as them at the head.",neutral,civil
+498594,573990,"Affected processors  ------------------- @@ -76,12 +77,14 @@ Attack scenarios     deterministic and more practical.",neutral,civil
+402510,414000,Essentially these are channels of information.,neutral,civil
+239101,240255,They've been dropped.,neutral,civil
+365796,367116,There is no easy way to give indication to the driver which LED node belongs to which control bank.,neutral,civil
+222860,230472,Can you add a commit message explaining why you add a specific defconfig  for this board.,neutral,civil
+358863,358900,3 of them (all in fs.h) are of the form The fourth is         return which itself is an ->actor() callback.,neutral,civil
+482005,482038,Could you describe in details the desired behaviour of this interface?,neutral,civil
+391895,397649,"Are you referring to cgroups in general, or task groups (aka.",neutral,civil
+202437,191275,How would the situation change if I would dare to regroup possible update steps?,neutral,civil
+402510,413698,And telling them 'Use Google' is just not the right thing to do.,neutral,civil
+170193,170197,"This is all good information, but I'd suggest it belongs more in the 0/n patch posting than here.",neutral,civil
+289026,292839,I am also quite confused why you keep distinguishing surplus hugetlb pages from regular preallocated ones.,neutral,civil
+498594,574882,"That's incorrect, because there are a lot of x86-32 systems which are not affected.",neutral,civil
+377230,377461,You must be using a non-standard git option here.,neutral,civil
+431048,432750,"My original comment was trying to provide the concept behind a way to create an alternate wording in the patch to define which email addresses"".""",neutral,civil
+72369,470502,"If it's not a problem anymore IIUC, can we revert the change as it still breaks hotplug_unpopulated=1"" for the reasons I described above?""",neutral,civil
+210458,210459,"Why would it do that, because it thinks dereferencing NULL is undefined behaviour and it can just do whatever it wants to?",neutral,civil
+498594,574882,Calling this a lie is a completly unjustified personal attack on those who spent quite a lot of time on writing up documentation in the first place.,neutral,civil
+245912,245916,I didn't put that warning in there for no good reason.,neutral,civil
+377230,377461,Does the wake_q code work correctly (e.g.,neutral,civil
+391895,394633,"On the console, I see the same backtraces I see when I try to set all of the VMs to be coscheduled:  [  144.494091] watchdog: BUG: soft lockup - CPU#87 stuck for 22s!",neutral,civil
+170193,170197,Who are you expecting to read it?,neutral,civil
+202437,513970,I find it very surprising that you rejected 146 useful update suggestions so easily.,neutral,civil
+169133,177642,"In drivers/net/wan/hdlc.It will do nothing  not start any new protocol and thus the timer.""",neutral,civil
+245912,245922,Please handle error cases first.,neutral,civil
+306145,357688,Your email client should not be forcing you to top post.,neutral,civil
+410867,414489,"I'm tossing the rest of your changes in this area for now, sorry.",neutral,civil
+347183,348381,"drm_kms_helper_is_poll_worker()), all that would mean is that we wouldn't grab any runtime power reference and the GPU would immediately suspend once the atomic commit finished, as the suspend request in Thread 5 would finally get unblocked and thus----suspend.",neutral,civil
+391895,394633,"I am happy to do any further debugging I can do, or try patches on top of those posted on the mailing list.",neutral,civil
+571417,571702,--  Sent from my Android device with K-9 Mail.,neutral,civil
+289026,292549,So sorry if I am repeating something already sorted out.,neutral,civil
+306145,317171,I _think_ these are identical.,neutral,civil
+358863,358900,"Furthermore, who the hell cares which callback has stepped into it?",neutral,civil
+289026,291846,"Therefore, I am concerned that this may be going against basic cgroup design philosophy.",neutral,civil
+402510,413538,"Tvrtko,    It would be very helpful if you cc all involved people on the cover letter instead of just cc'ing your own pile of email addresses.",neutral,civil
+541450,544269,"Which, btw, is terrible behavior.",neutral,civil
+261866,263843,Let me elaborate a bit for your understanding.,neutral,civil
+391895,397649,":) I wanted a summary, not a design document.",neutral,civil
+402510,413778,"The fact, that the existing knob is poorly documented does make an excuse for adding more knobs without documentation.",neutral,civil
+422694,423291,"Yes yes, I *know* that  GCC is not very intelligent about it and requires hand-holding, but  blaming the existing comment for not *properly* marking an intentional  fall through is ... rich.",neutral,civil
+245912,245922,It might make sense to provide the duplicate functions in a core file.,neutral,civil
+180488,180837,"If mmap_sem is not needed for migrate_pages(), please ignore this patch.",neutral,civil
+467091,479249,I don't see why.,neutral,civil
+167856,174594,"No problem, at the beginning, I only wanted to enable the strict.",neutral,civil
+169133,177642,"Ok, I check the source code again.",neutral,civil
+498594,574206,I would really like to get an ack from the people who have been deep into this first.,neutral,civil
+314071,314224,The commit description is not quite correct.,neutral,civil
+347183,348381,"Hopefully I explained that better this time, I'll definitely make sure to actually include that diagram in the patch.",neutral,civil
+245912,245922,"FWIW, it might be better to pass channel - DEFAULT_CHANNEL_NUMS as parameter.",neutral,civil
+365796,367116,The control-bank-cfg is a device level property and the reg under the child is a LED string level property denoting the Class node to control bank mapping.,neutral,civil
+498594,590551,That's truly confusing and truly x86 specific.,neutral,civil
+207400,208159,oops - left that in by mistake.,neutral,civil
+169133,193114,"If it's worth the effort at this point, I don't know.",neutral,civil
+402510,413778,"If you want to make a pettifogger contest out of this discussion, then we can stop right here.",neutral,civil
+391895,397649,"At least, that's my goal.",neutral,civil
+402510,413698,I did not say at all that this might be diminishing security.,neutral,civil
+498594,574882,The 2G limitation is not a general limitation.,neutral,civil
+498594,576302,"Affected processors  ------------------- @@ -76,12 +77,15 @@ Attack scenarios     deterministic and more practical.",neutral,civil
+202437,191241,I don't understand what is so difficult about this.,neutral,civil
+521470,533953,"I might be wrong, and if that's not the case I can take a look deeper and the end of the week.",neutral,civil
+281311,283024,It looks like you are not actually sure what you are doing then.,neutral,civil
+239101,240572,"(I can send it in a patch format, but it doesn't include a fix for Eric Biggers comments) ",neutral,civil
+307410,349339,What you didn't notice is that split_remote() separates the colon whether there is a host or not.,neutral,civil
+365796,367690,Thanks!,neutral,civil
+391895,397297,You don't even begin to outline how you preserve smp-nice fairness.,neutral,civil
+391895,397649,It's work in progress.,neutral,civil
+391895,397649,"Each    CPU only accesses runqueues, where itself is the leader.",neutral,civil
+541450,541515,But maybe that's just me.,neutral,civil
+331266,331694,thought that's what the whole RFC tag is about :-),neutral,civil
+539613,546377,"I understand that is helps for a complicated patch set to explain the problem and solution in the cover letter, but for this simple test case addition what's the point?",neutral,civil
+169133,193114,"There is related (more visible in practice, though we aren't affected) issue of ""active"" vs ""passive"" mode (hdlc_ppp.c is ""active""  and two ""passives"" wouldn't negotiate at all).",neutral,civil
+307410,311549,"Well, clients not checking the error code made this harder to debug for sure, but removing the error code is a side effect and not what is happening here (in fact someone should probably still go back and add error checking because these functions can still return errors but that's not really something I have time to do).",neutral,civil
+202437,191275,I am curious if bigger patch packages would be easier to get accepted.,neutral,civil
+239101,240572,following is a diff of my fix based on your modifications.,neutral,civil
+498594,573990,Take a care to look at the patch I submitted?,neutral,civil
+391895,397649,"With this patch set, only those parts that are actually coscheduled are involved in synchronization.",neutral,civil
+72369,470502,I think we shouldn't consider this as a valid thing to do and don't try to workaround initially incorrect code.,neutral,civil
+498594,574882,It's interesting that quite some people were actually happy about that document.,neutral,civil
+422694,423291,"What is not ""proper"" about the existing comment?",neutral,civil
+539613,546296,Also use tag selftests/tpm2 instead of having two tags in the short summaries.,neutral,civil
+165231,165261,"My point is, we might as well take the opportunity to fix this right away, don't you think?",neutral,civil
+183468,183472,Thanks for testing this and letting me know.,neutral,civil
+391895,397649,"Though, at this stage I am also really interested in things that are broken, that I am not aware of yet.",neutral,civil
+152625,157636,"Initially i was sceptical of rst & once instead of hitting the fly, hit make htmldocs on the keyboard :)  and the opinion about it was changed.",neutral,civil
+467091,471458,"For those that are placed directly under drivers/i3c/controllers/... (because they only have one .c file), I'd like to keep a standard prefix.",neutral,civil
+289431,289688,If we want to allow userland to eventually be able to scrape this value out of the kernel (as we discussed at LSF/MM) then we can't assume that it'll be doing any sort of syncfs call beforehand.,neutral,civil
+161354,161783,"For 2500Base-X, do you report a speed of 2500Mbps through ethtool, or are you reporting 1000Mbps?",neutral,civil
+541450,543076,Applications built against newer kernel can't expect all the features/semantics/etc to be identical to older kernels.,neutral,civil
+358863,358900,So all these return -E... in the instances are completely pointless  we should just turn filldir_t into pointer-to-function-returning-bool and get rid of that boilerplate  rather than adding more to it.,neutral,civil
+476403,477136,Not to mention that WARN is gramatically incorrect.,neutral,civil
+245912,245953,You follow a similar pattern above in the write case.,neutral,civil
+422694,423291,And  it would be nice to not blame the existing code for brain damage in GCC  and various other static analyzers.,neutral,civil
+402510,413698,You can add as many of yours as you want as long as everybody else is cc'ed.,neutral,civil
+377230,378511,Thanks for your detailed review of the patch.,neutral,civil
+498594,574882,"Sorry, that we weren't able to live up to your high standards.",neutral,civil
+202437,505099,"So in this particular case I would expect two omap_vout patches: one for the bug fix, one for the cleanups.",neutral,civil
+541450,542126,"If you look at the git log, this particular structure has been extended about 6 times in the life of sctp.",neutral,civil
+170193,170197,The introduction of *this* document should say what it actually covers.,neutral,civil
+169133,204633,"Please send it properly again, plain ASCII text, and no trasnformations by your email client.",neutral,civil
+174735,199701,"Are you suggesting each driver should implement every single callback available and if it is not implemented, return -ENOSYS ?",neutral,civil
+174735,199976,"One do not load all crypto drivers at once, simple because one board has only one crypto HW (or few closely related), and if one even try, almost none of them will initialize on given hardware.",neutral,civil
+391895,397649,"(And while there is of course a use case for    VMs in this, another class of use cases are auxiliary tasks, see eg, [1-5].)",neutral,civil
+216128,216133,why is the #ifdef needed here?),neutral,civil
+377230,377461,"Linux kernel specific includes go in fs/xfs/xfs_linux.h, not individual files.",neutral,civil
+391895,397649,"So, conceptually, this scales to larger systems from that point of view.",neutral,civil
+232313,234089,"Hi,    meta comment (i.e., not about the merits of the patch itself):  You'll need to send the patch to someone if you want it to be merged.",neutral,civil
+431048,432750,I'm sure that the professionals that deal with information privacy could provide better wording for the above list.,neutral,civil
+498594,590551,Also the PAE part needs to go to a completely different section.,neutral,civil
+266279,266313,"It probably makes sense to have somewhere at smatch a place where we could explicitly mark the false-positives, in order to avoid use to receive patches that would just add an extra delay where it is not needed.",neutral,civil
+245912,245953,Do we need them all?,neutral,civil
+391895,397649,"But maybe, people start experimenting with coordinated scheduling decisions -- after all, there is a ton of research on what one *could* do, if there was coscheduling.",neutral,civil
+245912,245953,Can we do something like this?,neutral,civil
+391895,397297,And that is a mayor failing IMO.,neutral,civil
+498594,590551,What is 'the standards'?,neutral,civil
+391895,397649,Works as before (or will work as before): a coscheduled task group has its own set of per CPU runqueues that hold the tasks of this group (per CPU).,neutral,civil
+336834,337316,Thank you in advance.,neutral,civil
+431048,432750,Anything else collected by the project would not be considered public.,neutral,civil
+391895,397649,"Still, the current state is good to start a discussion about the involved mechanics.",neutral,civil
+170193,170197,"You could improve things a lot by (once again) going to RST and using directives to bring in the kerneldoc comments from the source (which, I note, do exist).",neutral,civil
+266918,269136,"Finally, as all of these patches are totally independent, I thought it would be the best to send them as separated patches,  each drivers maintainers being then free to accept, reject or ignore the patch(es) concerning him/her.",neutral,civil
+347183,348381,Cheers!,neutral,civil
+391895,397297,I don't call this non-intrusive.,neutral,civil
+336834,337316,"On the contrary, it tells the user that all the locks are being held by the same task, which seems to be wrong.",neutral,civil
+230843,231058,For FTRACE use case.,neutral,civil
+541450,544269,"This patch, at best, needs some work and definitely a longer and more detailed commit message.",neutral,civil
+377230,377461,Fixing this may simply be using a larger log on your benchmark systems.,neutral,civil
+482005,482038,"The callback would trigger before the return to userland, so observable timing of the final close wouldn't be changed.",neutral,civil
+391895,394633,This is using cosched_max_level=1.,neutral,civil
+289026,292839,Are you going to uncharge those surplus pages ffrom memcg to reflect their persistence?,neutral,civil
+245912,245953,Use a few more lines to make it clear what your code is doing.,neutral,civil
+152625,157636,"Later while fighting with memory-barriers.txt, felt that it might be good for it as well as to be in that company.",neutral,civil
+347183,349692,"First of all, I was mistaken when I wrote above that a check for !drm_kms_helper_is_poll_worker() would solve the problem.",neutral,civil
+346223,347267,"As far as I can tell, the above is the whole reason for the patchset, yes?",neutral,civil
+431048,432750,"In that context, my personal information is not _public_, but it is _ordinarily collected_ by the company.",neutral,civil
+541450,543076,It shouldn't.,neutral,civil
+467091,479249,"You mean, inside a sub-folder (drivers/i3c/controllers/{vendor}/)?",neutral,civil
+467091,471458,"And again, I'm questioning the necessity of per-IP directories at the root level.",neutral,civil
+336834,337316,"I can also reproduce it on v4.14, so it appears to be in the kernel for quite some time.",neutral,civil
+391895,397297,"That is, the scheduler now behaves significantly different inside a VM than it does outside of it -- without the guest being gang scheduled itself and having physical pinning to reflect the same topology the coschedule=1 thing should not be exposed in a guest.",neutral,civil
+541450,543076,"To be clear,  this is situation (1) above, and yeah, running on the kernel you built your application against should always work from a compatibility standpoint.",neutral,civil
+245912,245953,The property is optional so I suggest we don't print a message if it's not present.,neutral,civil
+245912,245953,"I'm only just learning about PECI, but I do have some general comments below.",neutral,civil
+266279,266313,"Also, the net is full of other resources that would allow anyone to get the supported formats for a piece of hardware.",neutral,civil
+169133,177084,"Sorry, I will not apply this until the exact issue is better understood.",neutral,civil
+289026,291846,The question is whether this is an appropriate way to approach the issue.,neutral,civil
+391895,397649,There are also no tasks in a runqueue when it is responsible for more than one CPU.,neutral,civil
+476403,478120,And fundamentally that has to be so.,neutral,civil
+289026,294078,I will completely apologize if my way of thinking is wrong.,neutral,civil
+391895,397297,"And if you do that, I've no idea how you're dealing with SMP affinities.",neutral,civil
+498594,574882,So what exactly is the point of this change?,neutral,civil
+152625,157636,"It was easy to navigate through various docs & the realized that various topics (& many) were present (yes, it was there earlier also, but had to dive inside Documentation & search, while viewing the toplevel index.html made them standout).",neutral,civil
+498594,573990,"The Linux kernel contains a mitigation for this attack vector, PTE -   inversion, which is permanently enabled and has no performance -   impact.",neutral,civil
+498594,574882,Sure.,neutral,civil
+377230,377461,"This is intentional - spurious wakeups are rare enough we can ignore them because a) this is the slow path, and b) correctness is far more important that performance in this path.",neutral,civil
+391895,397297,"Not to mention I detest cgroups, for their inherent complixity and the performance costs associated with them.",neutral,civil
+259276,259299,Did you actually test this?,neutral,civil
+202437,196318,Are there any further possibilities to consider around consequences from a general change resistance?,neutral,civil
+402510,414000,There are cases where it isn't a problem at all.,neutral,civil
+347183,348381,that took a LONG time to come up with.,neutral,civil
+498594,770007,Hi!,neutral,civil
+431048,432750,Where are email addresses allowed to be published?,neutral,civil
+306145,317171,And wrap your lines at around 75 characters      Look closely at the two implementations.,neutral,civil
+467091,471458,"I don't think we can do like I2C, simply because we need to expose a valid DCR + manuf-ID/PID so that other masters can bind the device to the appropriate driver on their side.",neutral,civil
+498594,576302,"L1 Terminal Fault is a hardware vulnerability which allows unprivileged -speculative access to data which is available in the Level 1 Data Cache -when the page table entry controlling the virtual address, which is used -for the access, has the Present bit cleared or other reserved bits set.",neutral,civil
+391895,397649,"At this stage, it is just a way to experiment with larger systems without having to disable lockdep.",neutral,civil
+169133,179802,"Anyway, since the patch is safe and can solve an existing problem",neutral,civil
+289431,292003,  Doing anything during the async pass would be counterproductive.,neutral,civil
+541450,544269,The fact that the use of the new feature is hidden in the new structure elements is really rotten.,neutral,civil
+467091,471421,Splitting the driver is something that soon or later I will have to do.,neutral,civil
+391895,397649,the cpu controller) specifically?,neutral,civil
+165231,165261,Otherwise this looks good to me.,neutral,civil
+310967,311378,There are no unexpected results.,neutral,civil
+331266,331355,you need to document the heck out of this in the changelog to help explain all of these odd design decisions.,neutral,civil
+368515,368789,Note that PERF_SAMPLE_CODE_PAGE_SIZE would not have to be tied to PEBS unlike DATA_PAGE_SIZE.,neutral,civil
+498594,573990,"There's admin guide that is written as an advertisment, and     unfortunately is slightly inaccurate"" at places (to the point of     lying).""",neutral,civil
+210458,210461,A: Because it messes up the order in which people normally read text.,neutral,civil
+174735,199976,"As I said above, it reduces binary size at cost of more source code in few drivers.",neutral,civil
+174735,199600,The core can very well check if these functions are not populated and return ENOSYS   So you remove all NULL pointer checks ?,neutral,civil
+266279,266313,"Please notice that I'm fine if you want to submit potential Spectre variant 1 fixups, but if you're willing to do so, please provide an explanation about the potential threat scenarios that you're identifying at the code.",neutral,civil
+216128,216133,Where does serial8250_skip_old_ports get used where CONFIG_SERIAL_8250 isn't defined?,neutral,civil
+402510,414000,For users who have multiple users there can be different tradeoffs.,neutral,civil
+202437,505193,"[GIT,PULL,FOR,v4.15] Cleanup fixes This time, I was nice and I took some time doing",neutral,civil
+467091,471421,"I would bet to do something like in i2c, we don't need the same level of  complexity found in USB.",neutral,civil
+289026,294078,"It seems very strange that charge hugetlb page to memcg, but essentially it only charges the usage of the compound page obtained from the buddy pool, and even if that page is used as hugetlb page after that, memcg is not interested in that.",neutral,civil
+289026,271213,"And even if that handling is done well, it will not be a valid reason to charge surplus hugepage to memcg.",neutral,civil
+498594,573990,"On x86-32, this physical memory +   needs to be limited to 2GiB to make mitigation effective.",neutral,civil
+245912,245953,"How about we check that the regmap is working once in your _probe() function, and assume it will continue working from there (or remove the regmap abstraction all together).",neutral,civil
+331266,331847,"Well, it adds documentation :-) You can just read the patch which is ... the documentation :)  Yes, you did that's fine.",neutral,civil
+170193,188745,"ok, the example route should be more explicative.",neutral,civil
+331266,331694,"This is an RFC series, it's not meant for you to take at this point, it's about discussing the overall approach to exposing BMC random tunables"" as explained in patch 0 of the series.""",neutral,civil
+374095,374559,Good find!,neutral,civil
+541450,542126,"Also misleading, as it assumes that we're not intentionally doing this.",neutral,civil
+202437,513970,* Could your reaction have been different if the remarkable number of   change possibilities were sent by different authors (and not only me)?,neutral,civil
+498594,573990,Lie:  # A system with an up to date kernel is protected against attacks from # malicious user space applications.,neutral,civil
+169133,193114,"But if you have a better idea to fix it,I am glad to see it.",neutral,civil
+541450,543076,"I disagree with this, at least as a unilateral statement.",neutral,civil
+266918,269136,"It seems it was a bad guess, and yes, I see the point of having a series for this.",neutral,civil
+539613,546296,You are missing a cover letter from this patch set.,neutral,civil
+402510,413538,All of this want's a proper documentation clearly explaining the risks and scope of these knobs per PMU.,neutral,civil
+222860,223021,"There's a surprising amount of similarity between U-boot and Linux drivers (no coincidence I'm sure), including <linux/...> headers.",neutral,civil
+174735,199553,"This makes no sense, cfr my comment on 5/5  Seems like if the driver doesn't implement those, the core can easily detect that and perform the necessary action.",neutral,civil
+498594,573990,"Ok, I guess L1TF was a lot of fun, and there was not time for a good     documentation.",neutral,civil
+245912,245922,"Besides, the error can also be propagated from peci core code, and may well be something else.",neutral,civil
+266918,269136,"I hesitated between a single patch, a series or separated patches.",neutral,civil
+207400,208102,Do you mean why use a work procedure?,neutral,civil
+431048,432750,There seems to be a disconnect between what I am trying to communicate and what I perceive you to have understood.,neutral,civil
+174735,199600,"Come on ...   You can very well impose that in the core, except you don't duplicate the code.",neutral,civil
+391895,397649,"How would you tell the scheduler, which tasks these are?",neutral,civil
+402510,413768,"No, not because of that.",neutral,civil
+467091,471458,"If we mix everything in the same subdir, I'd like to have an easy way to quickly identify those that are slave controllers and those that are master controllers.",neutral,civil
+266918,269136,I suppose these sort of patches are as much a PITA for the sender than for the receivers.,neutral,civil
+391895,394633,"There are several moving parts there, so I tried narrowing it down, by only coscheduling one VM, and thing seemed fine:  One thing that is not entirely obvious to me (but might be completely intentional) is that since by default the top-level libvirt cpu cgroups are empty:    the result of this should be a no-op, right?",neutral,civil
+169133,177642,"So it is not my theory guessing, it is a real problem.",neutral,civil
+173287,173288,devel mailing list,neutral,civil
+289026,291846,"It would be good to get comments from people more cgroup knowledgeable, and especially from those involved in the decision to do separate hugetlb control.",neutral,civil
+365796,367690,This is better than my proposal.,neutral,civil
+498594,573990,"No problem here  no performance issues  nothing to be seen unless you are running VM.""""",neutral,civil
+391895,397297,_If_ we're going to do something for L1TF then I feel it should not depend on cgroups.,neutral,civil
+259276,259489,Hello.,neutral,civil
+347183,349692,"In that case, the nouveau_pmops_runtime_suspend() should return -EBUSY to abort the runtime_suspend.",neutral,civil
+289026,292549,Either by using special wrappers or modifying the code.,neutral,civil
+390394,390741,"If we're going to make this a run-time check (I'd much prefer a compile-time check, but I understand that this may involve too much churn), then please do it for stack-based request users only.",neutral,civil
+169133,179802,"Perhaps I could look at this later, but no promises (this requires pulling on and setting up some legacy hardware).",neutral,civil
+239101,240572,"Regarding free of sg in two error paths, you were correct.",neutral,civil
+431048,432750,"Trying to understand how you are understanding my comment vs what I intended to communicate, it seems to me that you are focused on the where allowed"" and I am focused on the ""which email addresses"".""",neutral,civil
+281311,281957,"If it doesn't exist, nothing needs to be done.",neutral,civil
+482005,482038,"Of course, the proper fix would require TARDIS and set of instruments for treating severe case of retrocranial inversion, so that this ABI"" would've never existed  but...""",neutral,civil
+207400,208159,It has 16x ADC channels where some can be temperatures and others can be voltage inputs (based on device tree).,neutral,civil
+347183,348381,"Hopefully I'm not missing anything here, but this doesn't really make any sense.",neutral,civil
+410867,414489,"Look, reviewing these are pretty stressful for me, because you aren't documenting your changes and in many cases the transformations look incorrect.",neutral,civil
+174735,199600,Esp.,neutral,civil
+368515,368789,"Layout is important for code as well, in fact, that's what most people want first.",neutral,civil
+541450,541515,I'm not sure that forcing a library on users is a good reason to break UAPI.,neutral,civil
+378505,379417,"Personally, I've been using ~1PB filesystems(*) for the performance testing I've been doing recently...",neutral,civil
+402510,414000,"To really close them completely you would need to avoid sharing anything, or not allowing to measure time, neither of which is practical short of an air gap.",neutral,civil
+498594,576302,"I don't know the detailed limits for each system, what about this?",neutral,civil
+521470,533953,If I am not mistaken there is still some work in progress trying to push all the SCP stuff?,neutral,civil
+303621,305468,Feel free to help in the process.,neutral,civil
+336834,337035,You grow that structure from 64 bytes to 96 bytes and with that grow the static footprint of the kernel by 512k (in the very best case) possibly again breaking things like sparc (which have a strict limit on the kernel image size).,neutral,civil
+402510,413538,This is really not helpful.,neutral,civil
+410867,414489,Please double check your work and resubmit this at some time in the not-too-near future.,neutral,civil
+169133,177642,I think you are making changes to the symptom rather than the true cause of the problems you are seeing.,neutral,civil
+431048,432750,"I hope this provides some insight into what I am reading into ordinarily collected by the project"".""",neutral,civil
+168169,173259,"This message is a bit odd, whether we keep the notion of levels or not.",neutral,civil
+391895,397649,"For the future, I imagine a more dynamic variant of task groups/scheduling domains, that can provide all the flexibility one would want without that deep of a nesting.",neutral,civil
+541450,541516,For example how likely is it that the growth of this structure make it go over a page?,neutral,civil
+391895,397649,Maybe I was a bit to eager in condensing the design to just a few paragraphs...,neutral,civil
+165657,169349,That'll break once we get other mitigation variants.,neutral,civil
+221804,221853,Ditto.,neutral,civil
+168169,173259,"Now, here comes the nasty part: NVIDIA only ever validated the boot values (I guess they are extremely safe ones), and the optimised values (the ones coming from your patch 2, 3, and 4 along with the level 3.",neutral,civil
+467091,479249,Actually that's the most interesting part for me: discussing how we want to support I3C slave controllers or mixed master/slave controllers.,neutral,civil
+239101,240572,I fixed it by placing several error labels to differentiate each handling.,neutral,civil
+391895,397649,It's a trade-off.,neutral,civil
+170193,188751,"I cannot comment on your proposal because I do not know where to find the reference you made, or maybe I do not understand what you mean :-(  --",neutral,civil
+347183,349692,"output_poll_execute(), and focus on the latter two.",neutral,civil
+431048,432750,"- (I am guessing the above covers 97% or more of possible public     sources, but maybe there are some more common sources.)",neutral,civil
+169133,179802,"Anyway the problem is real (though not very visible in practice, especially on relatively modern links rather than 300 or 1200 bps dialup connections) and should be fixed.",neutral,civil
+498594,576302,"+L1 Terminal Fault is a hardware vulnerability on most recent Intel x86 +CPUs which allows unprivileged speculative access to data which is +available in the Level 1 Data Cache when the page table entry +controlling the virtual address, which is used for the access, has the +Present bit cleared or other reserved bits set.",neutral,civil
+245912,245922,Needed ?,neutral,civil
+202437,505193,Interesting Would you like to share any more information from this meeting?,neutral,civil
+266279,266334,Sorry for the noise.,neutral,civil
+331266,331355,"This is a device, you should never have to mess with sysfs calls or kobject calls or structures directly.",neutral,civil
+402510,413650,Concrete example was that on video transcoding farms users want to  monitor the utilization of GPU engines (like CPU cores) and they can do  that via the i915 PMU.,neutral,civil
+174735,199701,Are you suggesting that the kernel code should NOT perform NULL pointer checks ?,neutral,civil
+498594,574882,A 32bit kernel booted on a 64bit capable CPU has the same issue.,neutral,civil
+391895,397297,And that would call for cpuset-v2 integration along with a new scheduling class.,neutral,civil
+402510,414266,"But because there is no single answer, it's even more important to have proper documentation.",neutral,civil
+289026,292839,Being a surplus page is an implementation detail that we use for an internal accounting rather than something to exhibit to the userspace even more than we do currently.,neutral,civil
+161354,161783,--  RMK's Patch system:  FTTC broadband for 0.8mile line in suburbia: sync at 8.8Mbps down 630kbps up According to speedtest.net: 8.21Mbps down 510kbps up,neutral,civil
+245912,245953,I think print_hex_dump_debug will do what you want here.,neutral,civil
+391895,397649,"If it is, it might get adopted.",neutral,civil
+168169,173259,Well done!,neutral,civil
+307410,311549,No this is not a feature request.,neutral,civil
+390394,390741,Sorry but I don't like imposing a run-time check on everybody when stack-based requests are the odd ones out.,neutral,civil
+498594,770007,At this point I want you to fix it yourself.,neutral,civil
+467091,471458,"I'm not saying I'm always right, but I need to understand the problems you're trying to solve to take a decision, and I don't think you initially gave all the details I needed to understand your PoV.",neutral,civil
+467091,471421,"To be clear, the subsystem is nice and I working with daily.",neutral,civil
+307410,307390,"Oops, sorry, I double posted patch 5.",neutral,civil
+402510,413778,"Quite the contrary, if we notice that the existing knob lacks proper documentation, then we should fix that first.",neutral,civil
+168060,169219,Hmm?,neutral,civil
+402510,413778,I explained it technically why just adding a knob without further explanation and analysis is not acceptable.,neutral,civil
+202437,505195,"I did that: either one patch per directory with the same type of change, or one patch per driver combining all the changes for that driver.",neutral,civil
+259276,259489,Thanks for your reply :)  I admit I am not familiar with this driver.,neutral,civil
+522705,522783,"I would drop this patch for being too ugly and if nothing else, for lack of users (epoll will no longer need dlock).",neutral,civil
+498594,574882,"On a system with 36bit physical address space the limit is 32G and on some CPUs that's actually wrong as well, see: override_cache_bits().",neutral,civil
+152625,157636,"But if there is a consensus, i will proceed.",neutral,civil
+431048,432750,"(I think it is fair to abstract here with ..."".)""",neutral,civil
+254985,255085,Please do not repost with such a small changes.,neutral,civil
+239101,240572,I took your modifications and working upon it.,neutral,civil
+245912,245922,Can this be made less magic with some defines ?,neutral,civil
+169133,177642,"It have nothing to do with the interrupts, it is related how the hdlc.c is implemented.",neutral,civil
+467091,471421,As I said  this is something that I dealing now and I'm telling what I think that  is not correct.,neutral,civil
+245912,245922,"lcrit is tcontrol - tjmax, and crit_hyst above is tjmax - tcontrol ?",neutral,civil
+245912,245922,This again looks like duplicate code.,neutral,civil
+467091,471458,"That's a bit clearer now, even if I still disagree on a few aspects.",neutral,civil
+202437,505099,"Hi Markus,    While we do not mind cleanup patches, the way you post them (one fix per file) is really annoying and takes us too much time to review.",neutral,civil
+307410,311549,Having a commit message that explains what led up to this commit is a good thing and allows people debugging in the future to better understand the decisions made.,neutral,civil
+391895,397297,That places very strict requirements and effectively breaks virt invariance.,neutral,civil
+231231,232204,Good mailing practices for 400: avoid top-posting and trim the reply.,neutral,civil
+289026,292549,There was a deliberate decision to keep hugetlb and normal memory cgroup controllers separate.,neutral,civil
+152625,156871,This means articles from external (like lwn articles) has to be recompiled.,neutral,civil
+210458,210461,Q: Should I include quotations after my reply?,neutral,civil
+347183,349692,As said I'm unfamiliar with MST but browsing through drm_dp_mst_topology.c I notice that drm_dp_mst_link_probe_work() is the ->work element in drm_dp_mst_topology_mgr() and is queued on HPD.,neutral,civil
+230843,231058,This is indeed guaranteed.,neutral,civil
+165657,169349,retpoline_ ... or such?,neutral,civil
+289026,291846,One of the basic questions/concerns I have is accounting for surplus huge pages in the default memory resource controller.,neutral,civil
+476403,477115,So I strongly disagree with this.,neutral,civil
+541450,542126,Thats a misleading statement.,neutral,civil
+391895,397649,"The prominent exception at this stage of the patch set is that enqueue and    dequeue operations walk up the hierarchy up to the cosched_max_level"".""",neutral,civil
+377230,377461,"At minimum, the wake_q infrastructure comments and documentation need updating to accommodate this new use case that wake queues are being used for.",neutral,civil
+289026,291846,"My cgroup experience and knowledge is extremely limited, but it does not appear that any other resource can be controlled by multiple controllers.",neutral,civil
+289026,291846,I understand that current mechanisms do not meet the needs of the above use case.,neutral,civil
+498594,573990,Limiting memory to 2GB _is_ going to have severe perfomance impact.,neutral,civil
+266017,266029,Is there some debug flag?,neutral,civil
+289026,294078,Could you explain what you were concerned about?,neutral,civil
+331266,331339,I can't take patches without any changelog text at all :(,neutral,civil
+207400,208159,I'll convert to dynamically allocating the channels for v2   right - certainly an issue   will do   will add validation   ok   Do you mean stuffing a u32 into a u8?,neutral,civil
+170193,188745,In practice it can also work as example.,neutral,civil
+289026,292549,The current hugetlb cgroup controller is simple and works at least somehow.,neutral,civil
+170193,188745,Thanks for the review and apologies for the delay.,neutral,civil
+170193,170197,"So one gets this far, but has no actual idea of how to do these things.",neutral,civil
+377230,377461,I'm betting that you'll get that and a whole lot more simply by increasing the log size and not running the slow path at all.,neutral,civil
+467091,479249,Ok.,neutral,civil
+245912,245916,"To think that by just providing an empty"" function you are somehow fulfilling the API requirement is quite bold  don't you think?""",neutral,civil
+174735,199553,"Moving the checks out of core seems like the wrong thing to do, rather you should enhance the checks in core if they're insufficient in my opinion.",neutral,civil
+467091,471458,"Plus, if we're about to expose generic profiles, we likely don't want each I3C slave controller driver to do that on its own.",neutral,civil
+377230,377461,How does this impact on the strict FIFO queue behaviour the grant queues currently have?,neutral,civil
+347183,348381,I'm not sure I explained myself as well as I thought I did.,neutral,civil
+377230,377461,"we only wake the tasks we have reservation space for, and log space being made available tends to arrive in discrete chunks (because IO is slow!)",neutral,civil
+391895,397649,"With coscheduling as defined by Ousterhout [7], you don't.",neutral,civil
+331266,331355,"If you do, that's a huge hint something is wrong here.",neutral,civil
+391895,397297,What about that atrocious locking you sprinkle all over the place?,neutral,civil
+541450,543076,To assume that a system call will always work is bad programming practice.,neutral,civil
+210458,210461,A: No.,neutral,civil
+169133,193114,"Perhaps I could look at this later, but no promises (this requires pulling on and setting up some legacy hardware).",neutral,civil
+165657,169349,Can you please use a consistent name space?,neutral,civil
+289026,271213,Thank you for your kind explanation.,neutral,civil
+289431,289688,"If we don't really care about allowing this to be an opt-in thing, then we could just take the patch that I sent on April 17th:      [PATCH] fs: track per-sb writeback errors and report them to syncfs  We'd also want patch #6 from this series, I think, but that's more or less enough to implement this over all filesystems, assuming they use mapping_set_error to record writeback errors.",neutral,civil
+168169,173259,"It was long overdue and it is nice to see the project finally getting to an end, after passing into so many hands!",neutral,civil
+377230,378511,"I have sent out a more conservative v2 patchset which, hopefully, can address the concerns that you raised.",neutral,civil
+365796,367764,"In my proposal each child node contains all the needed configuration, also in the form of two properties - led-sources and reg.",neutral,civil
+72369,470502,I mean the level of a resource in IOMEM tree (the one that's printed from /proc/iomem).,neutral,civil
+167856,174594,"Right, I have spotted some drivers to fix.",neutral,civil
+541450,543076,"Assuming you have a program built against headers from kernel B (above), if you set a field in the structure that only exists in kernel B, and try to run it on kernel A, you will get an EINVAL return, which is correct behavior because you are attempting to deliver information to the kernel that kernel A (the running kernel) doesn't know about.",neutral,civil
+169133,179802,"Sorry about being late, just returned home and am trying to get all the backlogs under control.",neutral,civil
+482005,482038,And it would avoid the kludges like this.,neutral,civil
+159308,177720,Bits of this are spread between patches 5 and 6.,neutral,civil
+498594,573990," + L1 Terminal Fault is a hardware vulnerability on most recent Intel x86 +CPUs which allows unprivileged speculative access to data which is +available in the Level 1 Data Cache when the page table entry +controlling the virtual address, which is used for the access, has the +Present bit cleared or other reserved bits set.",neutral,civil
+467091,471421,"In this case and taking what is already in the kernel it will be  drivers/i3c/{master, slave, dwc, other with the same architecture as dwc}.",neutral,civil
+377230,377461,Can you tell us what the storage is and it's configuration?,neutral,civil
+202437,196318,Would you dare to apply any (of my) scripts for the semantic patch language directly on the whole directory for multi-media software?,neutral,civil
+391895,397649,"For example, here's my current wish list off the top of my head:  a) lazy scheduler operations, for example: when dequeuing a task, don't bother    walking up the task group hierarchy to dequeue all the SEs -- do it lazily    when encountering an empty CFS RQ during picking when we hold the lock anyway.",neutral,civil
+169133,193114,"I remember the PPP standard is a bit cloudy about the possible issue, but the latter indeed exists (the PPP state machine was written directly to STD-51).",neutral,civil
+391895,397649,It really isn't.,neutral,civil
+402510,413538,"Just saying 'sysadmins might want to allow' is not useful at all, it's yet another 'I want a pony' thing.",neutral,civil
+289026,294078,"Due to this difference in property, I thought it could be distinguished.",neutral,civil
+467091,471421,"Just to close this topic I3C vs USB, IMO it's wrong to pass the message  that the I3C is closer to USB than I2C even more because I3C support the  I2C on the fly.",neutral,civil
+170193,188751,"So, I start with the pair (address, size) and I must end up to something I can compare it against.",neutral,civil
+541450,543076,This happens with any kernel api that exists in a newer kernel but not an older kernel.,neutral,civil
+202437,505099,"Feel free to repost, but only if you organize the patch as either fixing the same type of issue for a whole subdirectory (media/usb, media/pci, etc) or fixing all issues for a single driver.",neutral,civil
+422694,428645,It would have been so damn easy and it does not take a whole  lot of imagination to quiet down GCC while keeping the comments readable.,neutral,civil
+230843,231058,"This doesn't hold in general, though.",neutral,civil
+202437,202446,Fix your tools before you send any more patches.,neutral,civil
+72369,470502,"Nothing prevents - true, but that's plainly wrong from OS point of view to grab physical ranges for something without knowing what's actually behind on that platform.",neutral,civil
+336834,337316,It's OK if it doesn't reach mainline.,neutral,civil
+431048,432750,"To me, the patch wording is describing how I can determine whether I can put a specific email address in a tag in a patch that I submit or commit.",neutral,civil
+358863,358900,* there are only 4 callers.,neutral,civil
+169133,193114,"Anyway the problem is real (though not very visible in practice, especially on relatively modern links rather than 300 or 1200 bps dialup connections) and should be fixed.",neutral,civil
+207400,208141,I will remove the || COMPILE_TEST  Thanks for catching that.,neutral,civil
+498594,574882,I agree that this statement is incorrect.,neutral,civil
+331266,331710,"Oh come on, putting a basic here is what this patch does comment should be part of every patch  otherwise what is there to comment on if we don't know what is going on in the patch itself?",neutral,civil
+368515,368789,No need to use double the buffer space to save the address you will not use.,neutral,civil
+365796,367116,This will be answered in your comments in the code.,neutral,civil
+169133,177642,"My case is the carrier always good, but protocol will fail due to perfect noise, and this issue was found and complained by our customers.",neutral,civil
+306145,317171,Please don't top post.,neutral,civil
+498594,590551,X86 terminology?,neutral,civil
+402510,414000,There isn't a single answer that works for everyone.,neutral,civil
+266279,266313,"The way it works is that userspace do something like:  	int ret = 0,  	for (i = 0, ret == 0, i++) { 		ret = ioctl(VIDIOC_ENUM_FMT, ...), 	}  in order to read an entire const table.",neutral,civil
+391895,397297,"Hint: we're not going to increase the lockdep subclasses, and most certainly not for scheduler locking.",neutral,civil
+174735,200015,"It does NOT reduce the binary size, just try compiling all the drivers in and it will make the kernel bigger.",neutral,civil
+399771,401526,"Your patch adds a subtle possibility of future bugs, even if it runs fine today.",neutral,civil
+546823,547238,Looking more flexible does not make it more correct.,neutral,civil
+358863,358900,"The first time it happened from getdents(2) in a 32bit process and that's all you'll ever get out of me seems to be less than helpful...  And frankly  I would prefer 	return false  making that thing return -EUCLEAN or 0.",neutral,civil
+377230,377461,"[Because, as I noted at the end, you got this wrong for xlog_grant_head_wake_all()]  To maintian FIFO behaviour, the ticket needs to be left at the head of the grant head wait queue until it has space available to make progress, not get removed and requeued to the tail.",neutral,civil
+467091,471421,I think this discussion is starting to be counterproductive with arguing  of both parts.,neutral,civil
+266279,266331,Sorry for the noise and thanks for the feedback.,neutral,civil
+210458,210461,"Then fix the tool, the C code is correct :)   Then tell clang not to do that, like we tell gcc not to do that as that is a foolish thing for a compiler to do when building the kernel.",neutral,civil
+498594,574882,"As there are more documents being worked on for the other issues, I have a patch ready which moves that stuff into a separate hardware vulnerabilites folder in the admin-guide.",neutral,civil
+391895,397649,"And who knows, maybe someone will come up with a use case that moves coscheduling out of its niche, like the auto-grouping feature promoted the use of task groups.",neutral,civil
+391895,397297,"Things like the Tableau scheduler are what come to mind, but I'm not sure how to integrate that with a general purpose scheduling scheme.",neutral,civil
+261377,261389,"Good find, but your patch is corrupted to the point where any attenpt to fix it up on my side failed.",neutral,civil
+245912,245953,That looks like an endian swap.,neutral,civil
+331266,331710,"Anyway, I provided a bunch of feedback to the real patch in this series…",neutral,civil
+431048,432750,I do not think that the words in the patch accomplish that goal.,neutral,civil
+289431,292003,"XFS doesn't use the underlying blockdev address space, so this does nothing at all and should not be here.",neutral,civil
+377230,377461,This will lead to filesystem hangs.,neutral,civil
+169133,204633,"You should send the patch to yourself and try to apply the patch you receive, do not send to the list until you can pass the test properly.",neutral,civil
+402510,413650,But for that to work today they have to dial down  the global perf_event_paranoid setting.,neutral,civil
+207400,208102,I guess I don't need that and can call input_report_key directly from the irq.,neutral,civil
+289026,294078,"I would like to argue that surplus hugepage has specificity in terms of obtaining from the buddy pool, and that it is specially permitted charge requirements for memcg.",neutral,civil
+391895,397649,":D    Currently, there are more code paths than I like, that climb up the se->parent relation to the top.",neutral,civil
+467091,471458,"I'm not against per-IP directories, as long as they are classified like other HW blocks: drivers/i3c/{master,slave}/<ip>/...   No it's not vain, it's how we do discuss things in the community.",neutral,civil
+541450,543076,"Yes, but this is alawys the case for structures that change.",neutral,civil
+307410,311549,"After the next couple patches, the clients will use this change to detect that there are no port numbers and handle things similarly to the way they did before they were broken by the multiport changes.",neutral,civil
+307410,349339,It's not passed to ssh or cat (or whatever) directly.,neutral,civil
+391895,397649,"They need to go, if we want to coschedule larger parts of the system in a more efficient manner.",neutral,civil
+261866,263843,There were good reasons to why the earlier non-working multi slot support was removed from dw_mmc.,neutral,civil
+377230,377461,That's another landmine.,neutral,civil
+541450,543076,"I won't disagree about the niceness of versioning, but that ship has sailed.",neutral,civil
+539613,546296,Please have it in v2.,neutral,civil
+245912,245953,Would it make sense to write a driver for this clock and add it to drivers/clk/clk-aspeed.c?,neutral,civil
+289026,292549,Really hugetlb pages are by no means a substitute here.,neutral,civil
+310967,311378,NACK  Guenter,neutral,civil
+152625,156871,Take a look at *intersphinx* :     to see how it works:  Each Sphinx HTML build creates a file named objects.inv that contains a mapping from object names to URIs relative to the HTML setâ€™s root.,neutral,civil
+170193,170197,But I'd suggest rethinking this document and its audience.,neutral,civil
+402510,413698,I already added Kees and Jann.,neutral,civil
+169133,177642,"The timer is supposed to restart the protocol again, that's how this whole thing is designed to work.",neutral,civil
+391895,397649,"Like coscheduling based on deterministic, timed context switches across all CPUs.",neutral,civil
+541450,543076,"The application is none the wiser, because it has no knoweldge of the new option, nor should it because it was built against kernel A, that never offered that option  3) Application is built against kernel B and run on kernel B.",neutral,civil
+289431,292003, The disk must be active because we're syncing.,neutral,civil
+539613,546296,Remove.,neutral,civil
+391895,397649,"Do you believe me now, that L1TF is not the whole and only reason"" I did this?""",neutral,civil
+391895,397649,"You probably don't -- for the same reason, why it is a bad idea to give an endless loop realtime priority.",neutral,civil
+239101,240572,"Thank you so much for many style, formatting and other issues fixes and also for integration of 'check_at_most_once' patch, it saved me several review iterations.",neutral,civil
+266918,269136,"In a sense, the single patch would have been the easier for both sides but I guessed it would not have been very well welcomed.",neutral,civil
+365796,367764,Documenting all available combinations of the configuration is seldom the best solution.,neutral,civil
+289431,292003,"* We schedule log work now (now that the disk is  		 * active) instead of later (when it might not be).",neutral,civil
+391895,397649,Probably do some of the optimizations you suggested to just get rid of some of them.,neutral,civil
+152625,157636,"When one of the author of the original document objected, i felt it is better to backoff.",neutral,civil
+245912,245922,"What if find_core_index() returns priv->gen_info->core_max, ie if it didn't find a core ?",neutral,civil
+165231,165261,"According to my comment on the other thread, this stands true in case the child is managed by runtime PM as well.",neutral,civil
+365796,367116,Pavel  Thanks for the review    The problem we have here is there is a potential to control 3 different LED string but only 2 sinks.,neutral,civil
+167856,174594,Thanks for the detailed answer about what you have in mind.,neutral,civil
+377230,377461,This is buggy  - i will lead to hangs if the filesystem is shut down and there is a spurious wakeup that triggers this to go back to sleep.,neutral,civil
+467091,471458,So far we focused on supporting the former.,neutral,civil
+431048,432750,I understand that the intent of the patch wording is to allow use of email addresses in the tags of a patch submittal or git commit without being an unacceptable behavior.,neutral,civil
+207400,208159,Thanks for the review!,neutral,civil
+431048,432750,A very simplistic definition of public _could_ be:    - Visible on a project mail list that any one can subscribe to   - Visible on a project mail list whose archive is available via     the public internet   - Visible on an interactive communication (chat) platform that     is open to the public internet   - Published on a web page intended for public access (for example     this could cover opt-in conference attendee lists and emails     that conference presenters voluntarily place in their slides).,neutral,civil
+541450,541516,I would hope not at all.,neutral,civil
+159308,177720,"(but after a rebase most of this patch should disappear)   So this writes an impdef ESR, because its the existing code-path in KVM.",neutral,civil
+402510,414000,"So there isn't a single answer, and that is why it is important that this if configurable.",neutral,civil
+289431,292003,"metadata errors such as filesystem shutdowns, journal IO errors, etc), then check for pending data IO errors.",neutral,civil
+498594,590551,You called it a lie from the very beginning or what do you think made me tell you that?,neutral,civil
+289026,292839,"This all looks so hackish and ad-hoc that I would be tempted to give it an outright nack, but let's here more about why do we need this fiddling at all.",neutral,civil
+377230,378511,I now have a better understanding of what should and shouldn't be done.,neutral,civil
+541450,543076,"In this case, everything will work because the application passes a buffer of size 9, and the kernel accepts it, because it allows for buffers to be shorter than the current struct sctp_event_subscribe size.",neutral,civil
+289431,289688,"If __sync_blockdev fails, then the error should have already been marked in sb->s_wb_err (via patch #6).",neutral,civil
+289026,292839,I do share your view Mike!,neutral,civil
+377230,377461,This push is needed to make the necessary space we are waiting on available in the log.,neutral,civil
+170193,188745,"It's not code, so GPL seems wrong.",neutral,civil
+169133,204633,I cannot apply a patch which has been corrupted by your email client like this.,neutral,civil
+424089,424518,A fallback to the lame version when there is misalignment will be simple to do.,neutral,civil
+402510,413538,"For the record, I'm not buying the handwavy 'more noise' argument at all.",neutral,civil
+476403,478120,"IOW, 0 and 1 are perfectly valid valus to assign to a _Bool.",neutral,civil
+258997,260177,Could you please just merge the obvious fix from Arnd instead?,neutral,civil
+310967,311378,Making a non-fatal error fatal doesn't serve a useful purpose.,neutral,civil
+377230,377461,"My initial suspect is that you have a tiny log on your test filesystem, so it's permanently out of space and so always hitting the slow path.",neutral,civil
+331266,331355,"Why are you messing around with raw"" kobject attributes?""",neutral,civil
+541450,544269,"Newly compiled apps should work on older kernels if they don't try to use the new features, and if they can the ones that want to try to use the new features should be able to fall back when that feature isn't available in a non-ambiguous and precisely defined way.",neutral,civil
+152625,156564,"For example, the following LWN articles has a link this file:  	  And changing the name and/or location will break that link, AFAIK.",neutral,civil
+266279,267299,"So, a fix like that should likely go to almost all media drivers (there are a lot of them!",neutral,civil
+202437,191275,"If you would insist on patch squashing, would you dare to use a development tool like â€œquilt foldâ€ also on your own once more?",neutral,civil
+521470,533953,is this patchset still an RFC or you really want to see this merged ASAP?,neutral,civil
+402510,414000,There are reasonable assesments you can make either way and the answers will be different based on your requirements.,neutral,civil
+222860,223039,"Last time we wanted to modify the Rockchip driver, we were told consolidate  because ST had already forked our driver.",neutral,civil
+539613,546296,Remove.,neutral,civil
+347183,349692,I guess after calling drm_kms_helper_poll_disable() we should re-check if a crtc has been activated.,neutral,civil
+159308,177720,"Now that the cpufeature bits are queued, I think this can be split up into two separate series for v4.16-rc1, one to tackle NOTIFY_SEI and the associated plumbing.",neutral,civil
+377230,377461,You need to document constraints like this in comments and explain what code needs to guarantee those constraints are met.,neutral,civil
+402510,413768,You are assuming my actions and motivations and  constructing a story.,neutral,civil
+159308,177720,Which is a bit odd as there is a helper to do both in one go:      How come you don't use this in kvm_arm_set_sei_esr()?,neutral,civil
+159308,177720,And then you overwrite it.,neutral,civil
+391895,397649,b) ability to move CFS RQs between CPUs: someone changed the affinity of    a cpuset?,neutral,civil
+391895,397649,"There's only one CPU (the leader) making the scheduling decision for that runqueue and if another CPU needs to modify the runqueue, it works like it does for CPU runqueues as well: the other CPU works with the leader's time.",neutral,civil
+467091,471458,"I'm just pointing out that, if we have to expose I3C devices, we should look at what other discoverable buses do (PCI, USB, ...), not what I2C does.",neutral,civil
+170193,188745,Creative commons?,neutral,civil
+391895,397649,Hence my counter suggestion in the form of this patch set: Integrated into a general purpose scheduler  no need to partition off a part of the system  not tied to just VM use cases.,neutral,civil
+169133,193114,"Hi, David:  How  do you think my patch?",neutral,civil
+402510,414000,It's not like there is or isn't a security risk and that you can say that it is or it isn't in a global way.,neutral,civil
+498594,576302,"That may be confusing for people familiar with other architectures, which may not have such bit.",neutral,civil
+266279,266334,Further analysis is required as it seems all  these are False Positives.,neutral,civil
+431048,432750,Or am I still not communicating well enough?,neutral,civil
+166193,168161,I didn't get any response to a comment I've written about the point above during the previous patch iteration:> The old code set this bit in any mode other than AC'97 (where the  Maciej,neutral,civil
+245912,245922,Or the peci command failed.,neutral,civil
+391895,397649,It is not shared per se.,neutral,civil
+174463,174508,Ok.,neutral,civil
+402510,413768,Thanks!,neutral,civil
+266918,267111,"Finally, make this a true patch series.",neutral,civil
+281311,281957,Which is the case?,neutral,civil
+245912,245953,We have a framework for doing clocks in the kernel.,neutral,civil
+402510,413778,Guessing my reasonings has nothing to do with you mentioning incompentent sysadmins.,neutral,civil
+245912,245953,The same comment applies to the other optional properties below.,neutral,civil
+467091,471458,"I'm not saying I3C == USB, I'm just saying that the way you interact with an I3C from a SW PoV is not at all the same as you would do for an I2C device.",neutral,civil
+289026,292549,I would not add more on top unless there is a _really_ strong usecase behind.,neutral,civil
+245912,245922,More duplicate code.,neutral,civil
+431048,432750,It does not specify in what cases the email address can be published.,neutral,civil
+245912,245953,"It looks like you've done some kind of review that we weren't allowed to see, which is a double edged sword - I might be asking about things that you've already spoken about with someone else.",neutral,civil
+541450,544269,What a complete mess we have here.,neutral,civil
+467091,471458,"The question is not whether I3C will replace I2C or USB, of course it's meant to overcome the limitations of I2C.",neutral,civil
+365796,367764,"Dan,    It is better do add some complexity to the driver than to the user configurable settings like DT.",neutral,civil
+571417,571702,Please excuse my brevity.,neutral,civil
+482005,482038,Note that this patch does *not* remove the nasty trap caused by the garbage in question - struct file can be freed before we even return from ->unlocked_ioctl().,neutral,civil
+498594,590551,"Most of them use the PRESENT bit naming convention, just a few use VALID.",neutral,civil
+152625,156564,How do you plan to handle the external references?,neutral,civil
+245912,245922,Why ?,neutral,civil
+210458,210461,A: Top-posting.,neutral,civil
+377230,377461,"Yes, but they are very rare and we don't really care about this in the slow path.",neutral,civil
+541450,543076,Neil,neutral,civil
+476403,478120,That's how computers work.,neutral,civil
+391895,397649,That's fine.,neutral,civil
+358863,358900,Quite possibly - inlining it,neutral,civil
+391895,397649,"Of course, if you have a suggestion for a different locking scheme, we can discuss that as well.",neutral,civil
+245912,245953,Could the above use regmap_read_poll_timeout instead?,neutral,civil
+571417,571702,This is phenomenal.,neutral,civil
+152625,156871,"IMO symlinks are mostly ending in a mess, URLs are never stable.",neutral,civil
+383199,392690,"Ick, this is still messy, just try making this:  Yeah, it's over 80 columns, but it looks better and is easier to read, right?",neutral,civil
+216128,216133,I can't find mention of amdcz in Linus's tree nor linux-next.,neutral,civil
+266279,266313,"So, a quick look at the driver is enough to know exactly what the ioctl would answer.",neutral,civil
+289431,289688,I'm fine with either approach.,neutral,civil
+207400,207934,Basically a one port i2c mux.,neutral,civil
+365796,367116,I racked my brain trying to figure out how to configure the control banks and associated LED strings.,neutral,civil
+365796,367764,Besides - you will only need to check if given led-source is already taken by another node.,neutral,civil
+152625,156871,There is a      to handle such requirements.,neutral,civil
+498594,576302,"The Linux kernel contains a mitigation for this attack vector, PTE -   inversion, which is permanently enabled and has no performance -   impact.",neutral,civil
+402510,413650,"This feature was requested by the exact opposite concern, that in order  to access the i915 PMU, one has to compromise the security of the entire  system by allowing access to *all* PMU's.",neutral,civil
+498594,590551,If you want to provide more accurate documentation then you better come up with something which is helpful instead of completely useless blurb like the below:   How is the admin going to figure that out?,neutral,civil
+307410,311549,"If you have a better way to fix this, I'd be glad to hear it.",neutral,civil
+541450,543076,"If you have an application built against kernel (B), and uses structure fields that only exist in that version of the kernel (and not earlier) will fail to compile when built against kernel (A) headers, and thats expected.",neutral,civil
+379138,379657,"I like the idea and I think it's good direction to go, but could you please share some from perf stat or whatever you used to meassure the new performance?",neutral,civil
+402510,413698,Please look for the SECCOMP folks in MAINTAINERS.,neutral,civil
+207400,207934,"The current mux code does not seem to directly allow it, since it calls i2c_transfer() directly on the parent, where as you want it to call your own i2c_transfer function.",neutral,civil
+245912,245953,(This is the wait for the clock to be stable?),neutral,civil
+180488,180837,"Sorry, I missed that.",neutral,civil
+541450,541516,There probably is a decent compromise to find between not accepting a single additional byte and accepting several GB.,neutral,civil
+399771,401526,"Do not pave the way for future bugs, make your code robust, please.",neutral,civil
+377230,377461,This is a potential list corruption landmine because this function now has unbalanced list add and removal contexts.,neutral,civil
+159308,177720,"Irrelevant-Nit: sys-regs usually have a 'SYS_' prefix, and are in instruction encoding order lower down the file.",neutral,civil
+402510,413698,The keyword in the above sentence is 'just'.,neutral,civil
+391895,397297,"All in all, I'm not inclined to consider this approach, it complicates an already overly complicated thing (cpu-cgroups) and has a ton of unresolved issues while at the same time it doesn't (and cannot) meet the goal it was made for.",neutral,civil
+391895,397649,Bye bye interactivity.,neutral,civil
+230843,231058,"In any case, if you insist, I can try to rework the whole stuff implementing module_finalize().",neutral,civil
+467091,471458,"If there's a need for the latter, then we should start thinking about the slave framework...   Can you detail a bit more what you have in mind?",neutral,civil
+221804,221853,return !!,neutral,civil
+207400,208159,"understood - a much cleaner pattern   right - removed   yikes - thanks for catching that   ok   yes, that static arrays are not very forward-thinking and yes my arrays are not consistent.",neutral,civil
+232313,234089,Maintainers don't mine mailing lists for patches to apply.,neutral,civil
+391895,394633,"[This becomes relevant below] Specifically, all of the threads of qemu are in sub-cgroups, which do not indicate they are co-scheduling:  When I then try to coschedule the second VM, the machine hangs.",neutral,civil
+245912,245953,We certainly don't want to print a message saying invalid,neutral,civil
+202437,202446,Use normal patch styles.,neutral,civil
+498594,590551,It's about the way the limit is determined on certain class of systems.,neutral,civil
+258997,260177,[ it was posted two weeks ago and ACKed by me ],neutral,civil
+303621,305468,I never said we were perfect reviewers.,neutral,civil
+170193,188745,I just noticed a patch for checkpatch.pl about SPDX and asked the same question there.,neutral,civil
+266918,269136,"I'll remember all this for the next time (if next time there is, of course, I was already quite hesitant to spend time to prepare and send patches for these issues with enum/integer mix-up).",neutral,civil
+378505,378562,"does running mkfs.xfs -l size=2000m ... instead of using the default tiny log on your tiny test filesystem make the problem go away?""",neutral,civil
+167856,174594,Doing this involves that I have to remove pinctrl nodes for the pins which are going to be request through the gpiolib to avoid conflicts.,neutral,civil
+289026,292839,They just do not belong there.,neutral,civil
+541450,543076,The application is passing in a buffer that is incompatible with what the running kernel expects.,neutral,civil
+347183,349692,"Looking once more at the three stack traces you've provided, we've got: - output_poll_execute() stuck waiting for fb_helper->lock   which is held by drm_dp_mst_link_probe_work() - rpm_suspend() stuck waiting for output_poll_execute() to finish - drm_dp_mst_link_probe_work() stuck waiting in rpm_resume()  For the moment we can ignore the first task, i.e.",neutral,civil
+431048,432750,Permission vs exclusion is orthogonal to my comments.,neutral,civil
+539613,546377,Since when is the cover letter mandatory?,neutral,civil
+498594,573986,What's advertisement there?,neutral,civil
+170193,188751,Relatively significant?,neutral,civil
+202437,513970,* Have you taken any other solution approaches into account than   a quick rejection?,neutral,civil
+571417,571702,Thank you so much for digging into this.,neutral,civil
+168169,173259,"Once we settle on the configuration parameter, I can give you my R-b :) ",neutral,civil
+314071,314224,I will note that the FALLOC_FL_NO_HIDE_STALE flag is a bit controversial in linux-fsdevel.,neutral,civil
+347183,349692,Sorry!,neutral,civil
+307410,307390,Please disregard the second one.,neutral,civil
+169133,193114,"As you see, think my patch is ok to be accepted.",neutral,civil
+541450,544269,"Use new socket option numbers next time, do not change the size and/or layout of existing socket options.",neutral,civil
+259276,259489,"After knowing this, I admit my patch is not proper, sorry...",neutral,civil
+541450,543076,"Any time you make a system call to the kernel, you have to be prepared to handle the resulting error condition, thats not unexpected.",neutral,civil
+347183,349692,This should have bumped the runtime PM refcount and have_disp_power_ref should be true.,neutral,civil
+289431,289688,Note that __sync_blockdev will return errors based on the legacy AS_EIO/AS_ENOSPC flags.,neutral,civil
+498594,576302,"For mitigation to be effective, physical memory needs +   to be limited in some configurations.",neutral,civil
+202437,191275,We have got different preferences for a safe patch granularity.,neutral,civil
+245912,245953,Do you want to put it behind some kind of conditional?,neutral,civil
+266279,266331,I see I've missed some obvious things that you've pointed out here.,neutral,civil
+431048,432750,ordinarily collected by the project is a much broader universe.,neutral,civil
+424089,424518,"Certainly, byte-at-a-time is a pretty lame implementation when the addresses are suitably aligned.",neutral,civil
+391895,397297,You pretty much have to dedicate a set of CPUs to just scheduling VMs with such a scheduler.,neutral,civil
+221804,221853,Choose one of those two.,neutral,civil
+336834,337316,You likely also infer about the order of consuming the locks based on the contents of the stack dump associated to each lock.,neutral,civil
+431048,432750,The desired goal is to be able to publish email addresses in patch and commit tags.,neutral,civil
+314071,314224,What the NO_HIDE_STALE flag does is allow a discard request for those block devices which do not have the DISCARD_ZEROES_DATA flag.,neutral,civil
+498594,590551,Here is what you said:   Nice try.,neutral,civil
+221804,221853,Better to keep in order.,neutral,civil
+289026,271213,I will look for another way.,neutral,civil
+476403,478120,"The kernel is not the place to try and abstract such stuff, C is our portable assembler.",neutral,civil
+347183,349692,"BTW, drm_kms_helper_poll_disable() seems to be called twice in the runtime_suspend code path, once in nouveau_pmops_runtime_suspend() and a second time in nouveau_display_fini().",neutral,civil
+402510,413698,What I was asking for is proper documentation and this proper documentation is meant for _competent_ sysadmins.,neutral,civil
+307410,311549,But this should *not* be treated as a feature request.,neutral,civil
+336834,337316,"I  confirm that in case of x86_64, the bss size is increased by ~1M [1] with standard v4.18-rc4 x86_64_defconfig + CONFIG_LOCKDEP.",neutral,civil
+207400,207934,I would say this is done right.,neutral,civil
+258997,259513,could you please illustrate me what the kconfig & warning is?,neutral,civil
+347183,349692,"The same check seems necessary after flushing drm_dp_mst_link_probe_work(): If the work item lit up a new display, all previous suspend steps need to be unwound and -EBUSY needs to be returned to the PM core.",neutral,civil
+202437,160227,Are you going to answer any of my remaining questions in a more constructive way?,neutral,civil
+431048,432750,(This is the point of my original comment.),neutral,civil
+541450,543076,"I would assert that an old program, within the constraints of the issue being discussed here, will run perfectly well, when built and run against a new kernel.",neutral,civil
+391895,397649,Address them one by one.,neutral,civil
+424089,424518,Which CPU architecture?,neutral,civil
+336834,337316,"For sparc there seems to be a dedicated CONFIG_LOCKDEP_SMALL, which seems to downsize the lockdep implementation anyway.",neutral,civil
+174735,199673,Why you want checks for something that not exist ?,neutral,civil
+391895,397649,"As mentioned before, existing scheduler features, like preemption, (should) still work as before with this variant of coscheduling, with the same look and feel.",neutral,civil
+222860,223021,Since when do U-Boot patches go to LKML and dri-devel?,neutral,civil
+202437,191275,There are communication difficulties to consider since your terse information from your conference meeting.,neutral,civil
+289026,292549,We really do not want to make the current hugetlb code more complex than it is already.,neutral,civil
+303621,305468,It's not going away.,neutral,civil
+174735,199701,"You implemented the same code thrice, it surely is not reduced.",neutral,civil
+254985,255085,It is much more important to sort out the big picture first and only then deal with minor implementation details.,neutral,civil
+402510,413650,Making this ability fine-grained sounds like a logical solution for  solving this weakening of security controls.,neutral,civil
+391895,397297,"And then people will complain again that partitioning a system isn't dynamic enough and we need magic :/  (and this too would be tricky to virtualize itself)   You gloss over a ton of details here, many of which are non trivial and marked broken in your patches.",neutral,civil
+254985,255085,You will have to be patient because this is a rather big change and it will take _quite_ some time to get sorted.,neutral,civil
+391895,394633,"[ I am not subscribed to LKML, please keep me CC'd on replies ]    I tried a simple test with several VMs (in my initial test, I have 48 idle 1-cpu 512-mb VMs and 2 idle 2-cpu, 2-gb VMs) using libvirt, none pinned to any CPUs.",neutral,civil
+498594,573990,"Malicious guest in a virtual machine    --  (english)  (cesky, pictures)",neutral,civil
+365796,367764,In your bindings device configuration is scattered among global control-bank-cfg property and child node's reg property.,neutral,civil
+498594,590551,What kind of systems might be affected by this?,neutral,civil
+307410,349339,(Note: I do the majority of my testing in a looped-back setup).,neutral,civil
+431048,432750,I'll add comments below to try to make more clear what I'm trying to say.,neutral,civil
+245912,245953,"Actually, the entire for loop is cryptic.",neutral,civil
+336834,337316,"Actually this only works for backtraces with common history, i.e.",neutral,civil
+431048,432750,"The patch says Publishing ... electronic address not ordinarily collected by the project  without explicit permission"".""",neutral,civil
+72369,470502,1-st level means its parent is root and so on.,neutral,civil
+391895,397649,"(As opposed to a normal"" task group SE (TG-SE)  which represents just one runqueue in a different task group.)""",neutral,civil
+254985,255085,The more versions you post the more fragmented and messy the discussion will become.,neutral,civil
+402510,413768,"Even though I am not convinced the  bar to allow fine-grained control should be evaluating all possible  PMUs*, but if the security folks agree that is the case it is fine by me.",neutral,civil
+467091,471421,I miss to mention PCI but since the beginning refer the slave and the  common part.,neutral,civil
+306145,357688,So please don't.,neutral,civil
+289026,294078,It would be greatly appreciated if you could mention why we can not charge surplus hugepages to memcg.,neutral,civil
+259276,259299,"I also don't think we have the hrtimer machinery for usleep_range() to work properly on parisc, so I don't think the replacement works.",neutral,civil
+391895,397649,"I agree, that this isn't ready to be merged.",neutral,civil
+152625,156871,"I really like them, factually valuable comments .. please express your concern so that we have a chance to move on.",neutral,civil
+336834,337035,"Yeah, not going to happen.",neutral,civil
+498594,770007,Lying about security bugs being fixed when they are not is not cool.,neutral,civil
+167856,174594,I will try to handle the ones related to the platforms I am using.,neutral,civil
+174463,174508,Shouldn't there be a at least a comment to explain why zero is an appropriate initialization value in that case?,neutral,civil
+207400,207934,How about writing an i2c bus driver which sits directly on top of another i2c bus?,neutral,civil
+258997,259457,It's that simple.,neutral,civil
+168169,173259,"For CG and PG, it would be a all-or-nothing (either boot values, or everything like nvidia).",neutral,civil
+314071,314224,"However, the patches are out of tree, because pretty much all of the file system developers who work for enterpise distributions were against this functionality.",neutral,civil
+365796,367764,"Your control-bank-cfg seemed like having much room for improvement, and it would for sure raise questions on why it was implemented that way.",neutral,civil
+210458,210459,"That feels crazy, as for these calls we know it will never be NULL because the previous call to debugfs_file_get() will always ensure it will be correct.",neutral,civil
+498594,590551,Numbers are irrelevant because that documentation has to be applicable for stable kernels as well.,neutral,civil
+347183,348381,"To be honest, I had to double check this about literally 20 times to make sure I was actually understanding this issue correctly.",neutral,civil
+402510,413778,I did not say that you mentioned google.,neutral,civil
+202437,196318,I find such a change combination unsafe.,neutral,civil
+498594,590551,The mitigation is available when the kernel provides it.,neutral,civil
+391895,397649,So what?,neutral,civil
+498594,576302,Ok.,neutral,civil
+202437,191275,Or would you get frightened still by any other change combination?,neutral,civil
+245912,245953,regmap imposes a number of pointer lookups and tests each time you do a read or write.,neutral,civil
+281311,281957,"Either it does exist, or it doesn't.",neutral,civil
+289026,294078,"When resize the pool, I think that the number of surplus hugepages in use does not change.",neutral,civil
+245912,245953,I think just saying ASPEED PECI support is enough.,neutral,civil
+289026,292549,Please make sure to describe such a usecase in details before we even start considering the code.,neutral,civil
+346223,347267,And who *are* the people who are performing this configuration?,neutral,civil
+314071,314224,"I have no idea how Darrick was able to get commit 25f4c41415e5 upstream, but I guess it was less controversial for block devices than for file systems.",neutral,civil
+539613,546377,See git log tools/testing/selftests/,neutral,civil
+498594,590551,No.,neutral,civil
+476403,478120,"0 is false, 1 is true.",neutral,civil
+266279,267299,"Ok, a poor man"" approach would be to pass the array directly to the core and let the implementation there to implement the array fetch logic  calling array_index_nospec() there  but I wonder if are there any other way that won't require too much code churn.""",neutral,civil
+266279,266331,I'll  mark these warnings as False Positives and take your points into account  for the analysis of the rest of the Spectre issues reported by Smatch.,neutral,civil
+173287,173288,You can't do it this simply as it will cause deadlock due to nested locking of the buf_lock.,neutral,civil
+391895,397649,"That is, what I call intrusive.",neutral,civil
+391895,397649,"Even if you're not inclined -- at this stage, if I may be so bold :) -- your feedback is valuable.",neutral,civil
+365796,367116,These values are for the device configuration itself and the reg below indicates which control bank the LED node is assigned to.,neutral,civil
+258997,260189,The init function is making sure cal_type is one or another.,neutral,civil
+402510,413698,"I surely know a few which qualify for exclusion, so the right approach is to provide this knob only when the risk is analyzed and documented and the PMU has been flagged as candidate for unpriviledged exposure.",neutral,civil
+402510,413650,"Hi, I accept it was by bad to miss adding Cc's on the cover letter, but my  own email addresses hopefully should not bother you.",neutral,civil
+289026,292839,due to the pool resize.,neutral,civil
+377230,377461,"You didn't convert that to use wake queues, and so that won't remove tickets for the grant head waiter list, and so those tasks will never get out of the new inner loop you added to xlog_grant_head_wait().",neutral,civil
+258997,259457,"The code causes new compiler warnings, and the warnings are valid.",neutral,civil
+346223,347267,If the latter then they presumably aren't easily confused!,neutral,civil
+245912,245922,"FWIW, this should be two separate patches.",neutral,civil
+391895,397649,This SD-SE represents the per CPU runqueues of this core of this task group.,neutral,civil
+222860,223039,I'm going to be real disappointed if we see another fork get merged.,neutral,civil
+391895,397649,It may *still* be beneficial for a use case.,neutral,civil
+331266,331355,You normally have to manually initialize a dynamic attribute.,neutral,civil
+402510,413778,And not having documentation is basically the same thing as telling them to use google.,neutral,civil
+289026,292549,I believe we want to keep that status quo.,neutral,civil
+391895,397649,Tasks are still only enqueued in the per CPU runqueues.,neutral,civil
+391895,397297,"The existing cgroup overhead is significant, you also made that many times worse.",neutral,civil
+467091,471458,"For the dual-role thing, maybe we can consider them as master (ones with advances slave features).",neutral,civil
+467091,479249,That's what I'm complaining,neutral,civil
+368515,368789,"I would like to see the following changes to your proposal:    - call it PERF_SAMPLE_DATA_PAGE_SIZE  That would allow two things:    1 - not tied to PERF_SAMPLE_ADDR    2 - Allow PERF_SAMPLE_CODE_PAGE_SIZE to be added  In some measurements, you may just care about the distribution of accesses across page sizes.",neutral,civil
+541450,543076,"We could look into ways in which to detect the cases in which this might be 'ok', but I don't see why we should bother, because at some point its still an error to pass in an incompatible buffer.",neutral,civil
+391895,397297,"I'll beg to differ, this isn't anywhere near something to consider merging.",neutral,civil
+202437,513970,Does your wording indicate a questionable signal for further contributions?,neutral,civil
+378505,379417,50GB is tiny for XFS.,neutral,civil
+498594,576302,So how should it be called?,neutral,civil
+467091,471458,They will come.,neutral,civil
+365796,367764,It often obscures the issue.,neutral,civil
+289026,292549,I am sorry that I didn't join the discussion for the previous version but time just didn't allow that.,neutral,civil
+230843,231058,"If it's being called from FTRACE in run time, this would mean there were long calls in this module section, which in turn means, get_module_plt() was called at least once for this module and this section.",neutral,civil
+391895,397649,"But, for example, you won't have group-based fairness between multiple kvm thingies.",neutral,civil
+402510,413650,"Okay, for the next round I will expand the cover letter with at least  one concrete example on how it is usable and summarize the discussion a bit.",neutral,civil
+169133,193114,"Anyway, since the patch is safe and can solve an existing problem:  Acked-by: ",neutral,civil
+239101,240255,I'll send you a private copy of the patches just so you have them for your reference.,neutral,civil
+541450,542126,"And yes, this patch can be backported to older stable kernels, but by that same token, so can the patches that extend the struct, which would also fix the problem, while supporting the newer features, which seems to me to be the better solution for applications which are looking for that support.",neutral,civil
+422694,428645,Say it again for GCC.,neutral,civil
+245912,245916,Please go read the documentation again...,neutral,civil
+168169,173259,I can't find references to it in this patch (outside of the function below) or in the following patches.,neutral,civil
+541450,541516,"By choosing a large but decent high limit, I think we can find a future-compatible compromise that doesn't rely on a preliminary getsockopt() just for structure trucation decision...   --",neutral,civil
+168169,173259,I also did not expect that clock gating had to be disabled before we could program them.,neutral,civil
+289026,292839,Try to look at previous discussions why it has been decided to have a separate hugetlb pages at all.,neutral,civil
+378505,378562,Again I'll ask: what is the performance when the log is made large enough that your benchmark is *not hammering the slow path*?,neutral,civil
+347183,349692,"A stupid question, I notice that nv50_display_fini() calls nv50_mstm_fini() only if encoder_type != DRM_MODE_ENCODER_DPMST.",neutral,civil
+467091,471458,"All I've seen so far are complaints on tiny details, it definitely doesn't prevent you from adding new features.",neutral,civil
+402510,413650,Because I really don't know..,neutral,civil
+399771,400133,How can you set a shared variable with no synchronization ?,neutral,civil
+174735,199673,"Those without them will not work and will do Oops in crypto testmgr, so such drivers should not be used nor accepted in drivers/crypto  Ask yourself why crypto do not check for NULL in ahash digest or other required ahash functions.",neutral,civil
+245912,245953,If you feel strongly about this then I won't insist you change.,neutral,civil
+377230,377461,Please implement it as a loop.,neutral,civil
+391895,397649,"So, I probably haven't considered all alternatives.",neutral,civil
+152625,157636,"It was thought that rst conversion could be done quickly, but since this was my first attempt with rst, had to put some effort to get a not so bad output, even if this patch dies, i am happy to have learnt rst conversion to some extent.",neutral,civil
+167856,174594,"Yes, I have noticed this issue.",neutral,civil
+391895,397649,"Hence, coscheduling at, e.g., core level    does not have a too serious impact on lock contention.",neutral,civil
+168169,173259,"If you agree with having a single enable bit for CG, then a simple: Clockgating status: (boot|optimized) would work perfectly.""",neutral,civil
+377230,377461,That's racy.,neutral,civil
+391895,397649,"With gang scheduling as defined by Feitelson and Rudolph [6], you'd have to explicitly schedule idle time.",neutral,civil
+261377,261389,"Please resend without corruption, and please provide a Fixes: line.",neutral,civil
+498594,573990,"Plus, I believe it should go to x86/ directory, as this is really     Intel issue, and not anything ARM (or RISC-V) people need to know.",neutral,civil
+314071,314224,"I know of one other major cloud provider (in China) using the functionality as an out-of-tree patch, but with no one else speaking in favor of it, and everyone else NAK'ing the patch and enterprise distro's saying they would revert the patch in their distro kernels, the compromise we came to was that the code point for NO_HIDE_STALE_FL would be reserved so that users of the out-of-tree patches wouldn't collide with future fallocate flags, and I would stop trying to push the patches upstream.",neutral,civil
+245912,245922,Is priv->addr guaranteed to be >= PECI_BASE_ADDR ?,neutral,civil
+365796,367116,So control bank A can control 2 LED strings and control bank b can control 1 LED string.,neutral,civil
+169133,204633,Please read Documentation/process/submitting-patches.rst and Documentation/process/email-clients.rsDt for more information.,neutral,civil
+202437,191275,I imagine that there are more development factors involved.,neutral,civil
+498594,590551,"It's pretty clear, but yes admittedly we forgot to mention that Intel StrongARM is not affected.",neutral,civil
+391895,397297,"Unless you have solid suggestions on how to deal with all of them, this is a complete non-starter.",neutral,civil
+402510,413778,It allows to add the opt in flag on a case by case basis.,neutral,civil
+391895,397649,"Assuming, that a runqueue is responsible for a core and there are runnable tasks within the task group on said core, then there will one SE enqueued in that runqueue, a so called SD-SE (scheduling domain SE, or synchronization domain SE).",neutral,civil
+170193,170197,"Your document is 99.9% RST already, better to just finish the job and tie it into the rest of the kernel docs.",neutral,civil
+377230,377461,such that that pending wakeups have already been processed before the next chunk of available space comes in....,neutral,civil
+170193,188751,"I don't seem to be able to find it, at least not in 4.15  During hardened user copy permission check, I need to confirm if the memory range that would be exposed to userspace is a legitimate sub-range of a pmalloc allocation.",neutral,civil
+165657,169349,That only needs one function and that one can take care of setting a variable in the spectre code which then influences the sysfs output.,neutral,civil
+245912,245953,I know these come from the ASPEED sdk driver.,neutral,civil
+377230,377461,"Interesting - I don't see the grant head reservation code in any of my performance benchmark profiling, even when running at over a million transactions/s on a 2-socket 32-core 64-thread skylake system.",neutral,civil
+202437,505099,There is more than enough to do.,neutral,civil
+374095,374559,I'll queue this for the next fixes-pull-request.,neutral,civil
+467091,471421,Unfortunately I don't see anyone given their inputs too.,neutral,civil
+391895,397649,"No problem, just attach the runqueue with all the tasks elsewhere.",neutral,civil
+347183,349692,"Alternatively, move acquisition of the runtime PM ref further up in the call chain to those other contexts.",neutral,civil
+498594,576302,Malicious guest in a virtual machine ,neutral,civil
+498594,576302,PAE needs to be enabled for mitigation to +   work.,neutral,civil
+402510,413650,Could you explain why?,neutral,civil
+222860,223039,This nearly halted all progress.,neutral,civil
+202437,505099,"However, that's up to you.",neutral,civil
+391895,397649,Mm... there is certainly room for interpretation.,neutral,civil
+365796,367116,Don't see how you could compute this.,neutral,civil
+391895,394633,"When I tried to set all of the top-level libvirt cpu cgroups' to be co-scheduled (/bin/echo 1 > /sys/fs/cgroup/cpu/machine/<VM-x>.libvirt-qemu/cpu.scheduled), the machine hangs.",neutral,civil
+266279,267299,It now makes more sense to me.,neutral,civil
+307410,311549,People debugging commits will never find the 0/X cover letter which is just intended to introduce the series to reviewers and describe changes if the series is posted multiple times.,neutral,civil
+498594,576302,Also look at the timing of the thread.,neutral,civil
+391895,397649,"The load balancer will work on this subset of runqueues as it does on the normal"" per CPU runqueues -- smp-nice fairness and all.""",neutral,civil
+306145,357688,But you did it again....,neutral,civil
+266279,266313,Similar notes for the other patches to drivers/media in this series: let's not just start adding bloatware where not needed.,neutral,civil
+467091,471421,I agree with the controller folder but not with prefix.,neutral,civil
+216128,216133,"Otherwise, sure, sounds good.",neutral,civil
+165657,169349,The variable reflects the actual enabled mitigation state of the kernel proper.,neutral,civil
+202437,191241,We don't have the time to wade through dozens of one-liner cleanup patches.,neutral,civil
+281311,281957,"If it exists, it needs to be fixed.",neutral,civil
+476403,478120,"The C language spec, specifies _Bool as an integer type wide enough to at least store 0 and 1.",neutral,civil
+498594,574882,"FWIW, to the best of my knowledge the documentation about writing changelogs is neither incorrect nor is it optional to adhere to it.",neutral,civil
+365796,367116,Furthermore there are 2 device configurations that can be configured to only use 1 bank for all 3 LED strings.,neutral,civil
+159308,177720,If you pick some bits from another version and want to credit someone else you can 'CC:' them or just mention it in the commit-message.,neutral,civil
+266279,267299,"Yeah, better to apply a fix to avoid the issue with VIDIOC_ENUM_FMT.",neutral,civil
+202437,505099,I would also suggest that your time might be spent more productively if you would work on some more useful projects.,neutral,civil
+541450,543076,"This works fine, the sizes of the struct in question will always match  2) Application is built against kernel A and run on kernel B.",neutral,civil
+202437,513970,How would you ever like to clean up stuff in affected source files which was accumulated (or preserved somehow) over years?,neutral,civil
+467091,479249,"On the other hand, if you create a single module out of several source files, source files don't need to be prefixed, as long as the resulting module as a proper prefix.",neutral,civil
+402510,413538,The cover letter and the change logs should contain a summary of that discussion and a proper justification of the proposed change.,neutral,civil
+314071,314224,"So I'm certainly in favor of this patch landing in mainline, but you should be aware that there may be some opposition to it.",neutral,civil
+365796,367141,"Just a blind shot, without going into details - could you please check if led-sources property documented in the common LED bindings couldn't help here?",neutral,civil
+391895,397649,Yes it is.,neutral,civil
+377230,377461,"have all the necessary memory barriers, etc) when it's not a local stack object and instead protected from concurrency by a spin lock?",neutral,civil
+402510,413768,We can hopefully discuss it without ponies.,neutral,civil
+467091,471421,The major feature close to USB is this one and it can be found in others  protocols (standardization process).,neutral,civil
+402510,414000,Ah only if google could simply answer all our questions!,neutral,civil
+377230,377461,Same for the wake_all variable you added.,neutral,civil
+431048,432750,"For example, an email address provided in an email sent to me and not copied to any mail list would not be public.",neutral,civil
+377230,377461,"Either way, we can do the wrong thing because we dropped the lock and free_bytes and wake_all are now stale and potentially incorrect.",neutral,civil
+402510,413698,And the argumentation with 'incompetent sysadmins' is just the wrong attitude.,neutral,civil
+167856,174594,"Well, yes and not!",neutral,civil
+289026,291846,"The existing huegtlb resource controller already takes hugetlbfs huge pages into account, including surplus pages.",neutral,civil
+168169,173259,"Aside from all these nitpicks, the approach is quite self contained and I like the following patches.",neutral,civil
+368515,368789,"I welcome this feature, been wanting it for some time now.",neutral,civil
+541450,542126,"We've never supported running newer applications on older kernels, and no one is forcing anyone to use the lksctp-tools library, I was only suggesting that, if we were to support this compatibility, that might be a place to offer it.",neutral,civil
+174735,199673,Now size of crypto core is reduced.,neutral,civil
+202437,513970,What does this software area make it so special in comparison to other Linux subsystems?,neutral,civil
+391895,397297,"Also 'happened' suggests a certain stage of completeness, this again doesn't qualify.",neutral,civil
+391895,397297,Now explain to me how you're going to gang-schedule a VM with a good number of vCPU threads (say spanning a number of nodes) and preserving the rest of CFS without it turning into a massive trainwreck?,neutral,civil
+174735,199976,"on Exynos board only exynos drivers will load, on board with omap crypto only omap crypto will load.",neutral,civil
+377230,377461,"You can't drop the spin lock between xlog_grant_head_wake() and xlog_grant_head_wait(), because free_bytes is only valid while while the spinlock is held.",neutral,civil
+346223,347267,To avoid confusing users.,neutral,civil
+306145,317171,"So don't add your own helper, please use the core code.",neutral,civil
+174735,200015,You can compile kernel with generic config and at that point you have all the duplicated code stored on your machine.,neutral,civil
+402510,413698,You cannot expect that even competent sysadmins know offhand what which PMU might expose.,neutral,civil
+170193,170197,"We might as well put the SPDX tag here, it's a new file.",neutral,civil
+168169,173259,"All this time, I thought these parameters were for power gating...",neutral,civil
+422694,423291,"The way I see it, it is pretty well marked up as is.",neutral,civil
+222860,230472,You will also need to resync with the last master branch regarding  defconfig content.,neutral,civil
+402510,413538,I read through the previous thread and there was a clear request to involve security people into this.,neutral,civil
+307410,311549,This is the opposite of what I've ever heard before.,neutral,civil
+541450,541515,I don't think not fixing it because it's not fixed yet is a good reason to keep things the way they are.,neutral,civil
+245912,245953,Can we probe in parallel?,neutral,civil
+541450,544269,"I think we really need to specifically check for the difference sizes that existed one by one, clear out the part not given by the user, and backport this as far back as possible in a way that in the older kernels we see if the user is actually trying to use the new features and if so error out.",neutral,civil
+377230,377461,If there ever is a spurious wakeup then the waiter that was woken from the head remains there until the next wakeup comes in.,neutral,civil
+402510,414000,If you don't have multiple users on the system your tolerance should be extremely high.,neutral,civil
+431048,432750,Which email addresses are allowed to be published?,neutral,civil
+202437,513970,* How should possibly remaining disagreements about affected implementation   details be resolved now?,neutral,civil
+498594,576302,"Ok, now can we have that document updated to meet the standards?",neutral,civil
+245912,245922,This attribute should not exist.,neutral,civil
+258997,259457,"Pulled, and then immediately unpulled again.",neutral,civil
+467091,479249,All the driver split we're talking about here is just bikeshedding.,neutral,civil
+266279,266334,"Hi,  Please, drop this series.",neutral,civil
+289026,292839,I've asked in other email so I guess I will get an answer there but let me just emphasize again that I absolutely detest a possibility to put hugetlb pages into the memcg mix.,neutral,civil
+377230,377461,"The fast path is already lockless, and we've already given up peformance if we reach this slow path.",neutral,civil
+261377,261389,"This doesn't have to be on separate lines, as written, it just causes confusion.",neutral,civil
+289026,292549,Mostly because hugetlb memory is an artificial memory subsystem on its own and it doesn't fit into the rest of memcg accounted memory very well.,neutral,civil
+169133,193114,"Sorry about being late, just returned home and am trying to get all the backlogs under control.",neutral,civil
+222860,223021,"Anyway, I'll try my best to ignore this series.",neutral,civil
+402510,413650,Presumably you see adding fine grained control as diminishing the  overall security rather than raising it?,neutral,civil
+289026,294078,"On the other hand, surplus hugetlb pages waste the buddy pool.",neutral,civil
+159308,177720,"(These PSTATE PAN things are a bit odd as they were used to generate and instruction before the fancy {read,write}_sysreg() helpers were added).",neutral,civil
+498594,574882,Just because your machine emits the 2G number does not make it universally correct.,neutral,civil
+498594,574882,The limitation depends on the number of physical address bits supported by the cache (not the number of physical addresss bits exposed as pins) and is definitely not hardcoded to 2G.,neutral,civil
+266918,267111,It is so much easier for maintainers to work with a set of changes all doing the same thing if you make them a proper patch series with an appropriate [PATCH 0/N] ...header posting.,neutral,civil
+174735,200015,But this discussion is moving away from the point I was concerned about -- that this patchset _increases_ code duplication and I find this wrong.,neutral,civil
+377230,377461,"FWIW, can you post the actual profile you are seeing in the commit message?",neutral,civil
+377230,377461,this may not even be a problem with the transaction reservation code itself.,neutral,civil
+202437,513970,* How do you think about this detail?,neutral,civil
+245912,245953,"Hello Jae,    The driver is looking good!",neutral,civil
+541450,544269,"This whole thread, if you read it, is basically if we compatability this way  that breaks  and if we do compatability this other way oh shit this other thing doesn't work.""""",neutral,civil
+174735,199600,What is the impact of this non-critical path code on performance?,neutral,civil
+202437,505193,I found a feedback by Mauro Carvalho Chehab more constructive.,neutral,civil
+259276,259489,"I did not know this driver is only loaded during system boot-up time, I thought this driver can be loaded as a kernel module (like many  drivers) after system booting.",neutral,civil
+168169,173259,Why introduce gk104_therm_new_?,neutral,civil
+467091,471458,"There's a difference between a secondary master that waits for its time to become the currrent master, and a secondary master that provides I3C device features when it's acting as a slave (sensor, GPIO controller, ...).",neutral,civil
+498594,576302,"The kernel ensures that the address bits of PTEs, +   which are not marked present, never point to cacheable physical +   memory space.",neutral,civil
+541450,542126,Its also worth noting that we have precident for this.,neutral,civil
+174735,174850,This looks really nonsensical and the commit message doesn't explain the rationale for that at all.,neutral,civil
+161354,161783,I don't see any code in this patch that deals with that.,neutral,civil
+261866,263843,The above changes gives no guarantees for this.,neutral,civil
+170193,188751,"I do not object to your comment, but in practice i see that:  - vmalloc is used relatively little - allocations do not seem to be huge - there seem to be way larger overheads in the handling of virtual pages   (see my proposal for the LFS/m summit, about collapsing struct    vm_struct and struct vmap_area)    Can you please point me to this function/macro?",neutral,civil
+266918,269136,"Since for a series, you're supposed to CC the whole series to everyone involved, it would have been, or at least at thought so, maximaly noisy for no good reasons.",neutral,civil
+266279,266313,"A lsmod or cat /proc/modules) also tells that the tm6000 module was loaded, with is a very good hint that the tm6000 is there or was there in the past.",neutral,civil
+159308,177720,A version of this patch has been queued by Catalin.,neutral,civil
+169133,179802,"Looking at the patch, my first impression is it makes the code differ from STD-51 a little bit.",neutral,civil
+402510,413698,That documentation has to clearly describe what kind of information is accessible and what potential side effects security wise this might have.,neutral,civil
+347183,348381,"Turns out I was missing a couple of parts, so I'm going to try again at explaining this using a diagram that shows the various threads running concurrently ",neutral,civil
+467091,471421,Please check  what is already in the kernel.,neutral,civil
+168169,173259,Can you get rid of the mention of powergating given that this is not part of this patchset?,neutral,civil
+498594,576302,We should mention this is x86 before using x86-specific terminology.,neutral,civil
+422694,428645,Just  move the and to the previous comment like this.,neutral,civil
+168668,168727,"Again, 'boutside' protection ...  Other than that:  Reviewed-by: ",neutral,civil
+165657,169349,That's just hackery.,neutral,civil
+467091,479249,"If you were adding support for slaves, and were doing this split as part of this patch series explaining that part of the code between slave and master can be shared, then we wouldn't have this debate.",neutral,civil
+365796,367116,These values represent device level control and configuration of the LED strings to a specific control bank.,neutral,civil
+377230,377461,Spurious wake ups are irrelevant here - forwards progress (i.e.,neutral,civil
+467091,479249,"If the driver is simple enough to fit in one file, there's no reason to create a new subdir.",neutral,civil
+245912,245916,This has to be fixed.,neutral,civil
+266279,267299,"Peter,  Thanks for a comprehensive explanation about that.",neutral,civil
+377230,377461,"i..e. while waking up the waiters, we could have run out of space again and had more tasks queued, or had the AIL tail move and now have space available.",neutral,civil
+431048,432750,More clear?,neutral,civil
+231231,232204,So make it fit by returning an unsigned int.,neutral,civil
+377230,377461,Did you run this through fstests?,neutral,civil
+498594,574882,"That still does not justify the changelog"" you provided.""",neutral,civil
+377230,377461,"That helps us identify similar problems in the future, and it lets us know what paths are leading to the transaction reservation contention.",neutral,civil
+467091,471458,"Would you be okay with drivers/i3c/controllers/{designware,dw}/..., so that you can have all designware drivers (for both slave and master blocks) in the same dir?",neutral,civil
+377230,377461,The shutdown check needs to break the sleep loop.,neutral,civil
+391895,397649,With respect to scalability: many coscheduling use cases don't require synchronization across the whole system.,neutral,civil
+221804,221853,What's wrong with dev_info() ?,neutral,civil
+347183,349692,"Au contraire, you must not acquire any because it will deadlock while the GPU is runtime suspending.",neutral,civil
+391895,397649,"Due to the overhead of nesting cgroups that you mentioned earlier, that many levels in the runqueue hierarchy are likely to be impracticable anyway.",neutral,civil
+402510,413778,But what is a sysadmin supposed to do when there is no documentation aside of using google?,neutral,civil
+422694,428645,I still object.,neutral,civil
+169133,177642,"Sorry, I will not apply this until the exact issue is better understood.",neutral,civil
+289431,289688,The main reason to push this down into the filesystems is to allow them control over whether to report errors at syncfs time via the superblock errseq_t or not.,neutral,civil
+168169,173259,"As you even export this function, it looks like you used to use this function in an earlier revision of this series.",neutral,civil
+347183,349692,"Right, that seems to be a bug nouveau_pmops_runtime_suspend():  If a display is plugged in while the GPU is about to runtime suspend, the display may be lit up by output_poll_execute() but the GPU will then nevertheless be powered off.",neutral,civil
+152625,157636,"It was like earlier you had to go after docs, but now it was docs coming after you, that is my opinion.",neutral,civil
+331266,331694,Greg (and replying to your other comments as well)...,neutral,civil
+159308,177720,If you put them in the other order this wouldn't happen.,neutral,civil
+245912,245922,I am quite completely missing how the two functions above are different.,neutral,civil
+539613,546377,And there is nothing forcing a cover letter in   Also double tags seams to be quite common for selftest.,neutral,civil
+174463,174508,I've looked at your patch for way too long now and still don't see how you've shown it to be correct.,neutral,civil
+221804,221853,When you use explicit casting in printf() you are doing in 99.9% cases something wrong.,neutral,civil
+424089,424518,But I'm wondering who is actually using this code!,neutral,civil
+391895,397649,"But as your mind seems made up, I'm not going to bother to argue.",neutral,civil
+202437,513970,I distribute my software development capacity over several areas.,neutral,civil
+245912,245922,"Why is this invalid""  and why does it warrant an error message ?""",neutral,civil
+358863,358900,These calling conventions st^Ware rather suboptimal.,neutral,civil
+266918,267111, please don't submit such a huge number of patches all at one time.,neutral,civil
+377230,377461,Just define the wakeq in the context where it is used rather than use a function wide variable that requires reinitialisation.,neutral,civil
+498594,573990,"The kernel ensures that +   the address bits of PTEs, which are not marked present, never point +   to cacheable physical memory space.",neutral,civil
+402510,414000,"Perfmon counters make the channels generally less noisy, but they do not cause them.",neutral,civil
+498594,576302,"Yes, you can kind-of figure it out from the next section... except for Intel StrongArm.",neutral,civil
+159308,177720,I didn't sign-off this patch.,neutral,civil
+210458,210463,"That's crazy, how has this not been hit yet when building the kernel?",neutral,civil
+245912,245953,I understand what it's doing now.,neutral,civil
+202437,196318,Will any development (or management) tools like â€œquilt foldâ€ make the regrouping of possible update steps more convenient and safer?,neutral,civil
+467091,479249,"But right now, you're telling me that we need to split the DW driver to prepare for features that have not even been discussed/proposed.",neutral,civil
+391895,397649,Just like task groups.,neutral,civil
+391895,397649,"Hence, parts of my wish list further up.",neutral,civil
+266017,266029,"I am only aware of the Ftrace framework, but in my experience it also  skews the timings quite a bit, so might not be the best choice.",neutral,civil
+391895,397649,"If not, that particular use case may be considered impractical unless someone comes up with a better implementation of coscheduling.",neutral,civil
+289026,292549,"Well, then I would argue that you shouldn't use 64kB pages for your setup or allow THP for smaller sizes.",neutral,civil
+289026,294078,The hugetlb pages obtained from the pool do not waste the buddy pool.,neutral,civil
+170193,170197,Please don't put plain-text files into core-api - that's a directory full of RST documents.,neutral,civil
+170193,188745,I suppose I should do it also for all the other new files I create  But what is the license for the documentation?,neutral,civil
+402510,413538,Especially those who are deeply involved with hardware side channels.,neutral,civil
+498594,590551,Your's or is there a general agreement?,neutral,civil
+467091,479249,"I'm not saying the discussion is useless, just that it's happening way too early compared to the other things we should work on.",neutral,civil
+402510,413698,"If you can't explain and document it, then providing the knob is just fulfilling somebodys 'I want a pony' request.",neutral,civil
+210458,210461,Q: Why is top-posting such a bad thing?,neutral,civil
+391895,397649,"And even with this implementation, there's nothing stopping you from down-sizing the width of the coscheduled set to take out the idle vCPUs dynamically, cutting down on fragmentation.",neutral,civil
+498594,574882,It's suggesting that this document was written with malicious intent and the purpose of deceiving someone.,neutral,civil
+391895,397649,"c) light-weight task groups: don't allocate a runqueue for every CPU in the    system, when it is known that tasks in the task group will only ever run    on at most two CPUs, or so.",neutral,civil
+207400,208102,"ok   ok - will have this in v2:  // SPDX-License-Identifier: GPL-2.0 // // Copyright (C) 2018 Gateworks Corporation // // This driver dispatches Linux input events for GSC interrupt events //    oops, did not mean to submit that   it was for original debugging and not needed - will remove   Yes, that makes sense.",neutral,civil
+245912,245953,"On that note, is there a reason you are using regmap and not just accessing the hardware directly?",neutral,civil
+402510,413768,"I was trying to guess your reasoning (cues in  presumably"" and a lot of question marks) since it wasn't clear to me  why is your position what it is.""",neutral,civil
+170193,188751,"The idea here is to pass through struct_page and then the related vm_struct/vmap_area, which already has the information about the specific chunk of virtual memory.",neutral,civil
+347183,349692,"I further notice that the work item is flushed on And before the work item is flushed, the HPD source is quiesced.",neutral,civil
+222860,223039,And why can't you use DRM?,neutral,civil
+216128,216133,Sorry for being dense.,neutral,civil
+261866,263843,"The core uses a host lock (mmc_claim|release_host()) to serialize operations and commands, as to confirm to the SD/SDIO/(e)MMC specs.",neutral,civil
+402510,413650,Obvious improvement was to allow  them to only dial down the i915.perf_event_paranoid setting.,neutral,civil
+168169,173259,I am not sure I understand the purpose of this level here.,neutral,civil
+391895,397649,Thank you for that.,neutral,civil
+399771,400133,"A bool is particularly dangerous here, at least on some arches.",neutral,civil
+169133,193114,"Looking at the patch, my first impression is it makes the code differ from STD-51 a little bit.",neutral,civil
+372597,372959,"This patch was corrupted by your email client, for example it turned TAB characters into sequences of spaces.",neutral,civil
+476403,478120,Then those tools are broken per the C spec.,neutral,civil
+152625,157636,And the readability as a text is not hurt as well.,neutral,civil
+368515,368789,I am happy adding it on top on your proposal.,neutral,civil
+422694,423291,The big question is why you did not stop to think and consider  the context?,neutral,civil
+521470,533953,"To be honest, I'd like to take a deeper look before merge this, btw I thought there was no hurry because of the RFC and I guess there are still some scp things that are missing.",neutral,civil
+498594,574882,Care to explain why you are assuming this to be the case?,neutral,civil
+391895,397649,"And even then, due to lock chaining, multiple enqueue/dequeue operations    on different CPUs can bubble up the shared part of the hierarchy in parallel.",neutral,civil
+424089,424518,This is going to do bad things if the incoming addresses aren't suitably aligned.,neutral,civil
+259276,259299,The usual reason for wanting m/udelay is that the timing must be exact.,neutral,civil
+245912,245953,That way if the next ASPEED SoC happens to have PECI we don't need to update all of the help text :)   Nit: we use ASPEED instead of AST in the upstream kernel to distingush from the aspeed sdk drivers.,neutral,civil
+541450,543076,"This will break because the application is passing a buffer that is larger than what the kernel expects, and rightly so.",neutral,civil
+431048,432750,"This then leads my mental process down the path of the disclosures (from all of the companies that I do business with) that tell me what they are going to do with my personal information, such as my address.",neutral,civil
+431048,432750,I am but an amateur in that field.,neutral,civil
+391895,397649,"Hence, there is often only one user per lock even at higher levels.",neutral,civil
+245912,245953,Can you rework it to make it more readable?,neutral,civil
+210458,210459,Papering over compiler foolishness is not something I like to do in kernel code if at all possible...,neutral,civil
+245912,245916,"You are trying to out smart"" the kernel by getting rid of a warning message that was explicitly put there for you to do something.""",neutral,civil
+402510,413698,"Sure, and because you don't know you didn't bother to ask around and ignored the review request.",neutral,civil
+391895,397649,It's just a bad idea.,neutral,civil

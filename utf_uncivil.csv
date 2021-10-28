@@ -1,0 +1,277 @@
+﻿thread_id,email_id,quotation,quotation_code,email_final_code
+152625,156500,"So I hate this rst crap with a passion, so NAK from me.",mocking,uncivil
+152625,156500,"So I hate this rst crap with a passion, so NAK from me.",vulgarity,uncivil
+152625,156564,"And changing the name and/or location will break that link, AFAIK.",bitter_frustration,uncivil
+152625,156564,How do you plan to handle the external references?,bitter_frustration,uncivil
+152625,156564,How do you plan to handle the external references?,impatience,uncivil
+152625,156871,I think that's a pity.,irony,uncivil
+152625,156871,please express your concern so that we have a chance to move on.,bitter_frustration,uncivil
+152625,156871,"I really like them, factually valuable comments",irony,uncivil
+159308,177720,If you pick some bits from another version andwant to credit someone else you can 'CC:' them or just mention it in the commit-message.,bitter_frustration,uncivil
+159308,177720,If you pick some bits from another version andwant to credit someone else you can 'CC:' them or just mention it in the commit-message.,name_calling,uncivil
+159308,177720,How come you don't use this in kvm_arm_set_sei_esr()?,mocking,uncivil
+161354,161783,"For 2500Base-X, do you report a speed of 2500Mbps through ethtool, or are you reporting 1000Mbps?  I don't see any code in this patch that deals with that.",bitter_frustration,uncivil
+165657,169349,This really can be done in a cleaner way.,impatience,uncivil
+165657,169349,"And that output should not be Vulnerable"" like you force with the hackabove.""",name_calling,uncivil
+165657,169349,It actually should tell WHY it is vulnerable despite having had protection in place before the module was loaded.,bitter_frustration,uncivil
+165657,169349,These newlines are there to separate stuff for readability sake.,impatience,uncivil
+166193,168161,I didn't get any response to a comment I've written about the point above during the previous patch iteration,impatience,uncivil
+168060,169219,This does not make sense vs. the documentation:,mocking,uncivil
+168668,168727,"Again, 'boutside' protection ...",impatience,uncivil
+169133,177084,I think you are making changes to the symptom rather than the true cause of the problems you are seeing.,name_calling,uncivil
+169133,177084,"The timer is supposed to restart the protocol again, that's how this whole thing is designed to work.",impatience,uncivil
+169133,177084,"The timer is supposed to restart the protocol again, that's how this whole thing is designed to work.",bitter_frustration,uncivil
+169133,177084,"Sorry, I will not apply this until the exact issue is better understood.",threat,uncivil
+169133,177642,"So it is not my theory guessing, it is a real problem.",bitter_frustration,uncivil
+169133,204633,I cannot apply a patch which has been corrupted by your email client like this.,bitter_frustration,uncivil
+169133,204633,"You should send the patch to yourself and try to apply the patch you receive, do not send to the list until you can pass the test properly.",name_calling,uncivil
+170193,170197,Who are you expecting to read it?,name_calling,uncivil
+170193,170197,"You could improve things a lot by (once again) going to RST and using directives to bring in the kernel doc comments from the source (which, I note, do exist).",impatience,uncivil
+170193,170197,"Most of the people reading it are likely wanting to learn how to *use* this API, I think it would be best to not leave them frustrated.",threat,uncivil
+170193,170197,"So one gets this far, but has no actual idea of how to do these things.Which leads me to wonder: what is this document for?",mocking,uncivil
+170193,188751,"I cannot comment on your proposal because I do not know where to find the reference you made, or maybe I do not understand what you mean :-(",bitter_frustration,uncivil
+173287,173288,You can't do it this simply as it will cause deadlock due to nested locking of the buf_lock.,bitter_frustration,uncivil
+173287,173288,You can't do it this simply as it will cause deadlock due to nested locking of the buf_lock.,name_calling,uncivil
+174463,174508,Shouldn't there be a at least a comment to explain why zero is an appropriate initialization value in that case?,bitter_frustration,uncivil
+174463,174508,I've looked at your patch for way too long now and still don't see how you've shown it to be correct.,impatience,uncivil
+174735,174850,This looks really nonsensical and the commit message doesn't explain the rationale for that at all.,bitter_frustration,uncivil
+174735,199553,"This makes no sense, cfr my comment on 5/5",mocking,uncivil
+174735,199600,So you remove all NULL pointer checks ? Esp. in security-sensitive code? What is the impact of this non-critical path code on performance?,bitter_frustration,uncivil
+174735,199600,So you remove all NULL pointer checks ? Esp. in security-sensitive code? What is the impact of this non-critical path code on performance?,name_calling,uncivil
+174735,199600,"You can very well impose that in the core, except you don't duplicate the code.",name_calling,uncivil
+174735,199600,Come on ...,impatience,uncivil
+174735,199673,Why you want checks for something that not exist ?,bitter_frustration,uncivil
+174735,199673,Why you want checks for something that not exist ?,name_calling,uncivil
+174735,199673,Ask yourself why crypto do not check for NULL in ahash digest or other required ahash functions.,name_calling,uncivil
+174735,199701,"You implemented the same code thrice, it surely is not reduced.",mocking,uncivil
+174735,199701,"You implemented the same code thrice, it surely is not reduced.",name_calling,uncivil
+174735,199701,Are you suggesting that the kernel code should NOT perform NULL pointer checks ?,bitter_frustration,uncivil
+174735,199701,Are you suggesting that the kernel code should NOT perform NULL pointerchecks ?,name_calling,uncivil
+174735,199701,"Are you suggesting each driver should implement every single callback available and if it is not implemented, return -ENOSYS ?",bitter_frustration,uncivil
+174735,199701,"Are you suggesting each driver should implement every single callback available and if it is not implemented, return -ENOSYS ?",name_calling,uncivil
+174735,199976,"As I said above, it reduces binary size at cost of more source code in few drivers.",impatience,uncivil
+174735,199976,"One do not load all crypto drivers at once, simple because one board has only one crypto HW (or few closely related), and if one even try, almost none of them will initialize on given hardware.",bitter_frustration,uncivil
+174735,200015,"It does NOT reduce the binary size, just try compiling all the drivers in and it will make the kernel bigger.",bitter_frustration,uncivil
+174735,200015,"It does NOT reduce the binary size, just try compiling all the drivers in and it will make the kernel bigger.",impatience,uncivil
+174735,200015,You can compile kernel with generic config and at that point you have all the duplicated code stored on your machine.,name_calling,uncivil
+202437,160227,Are you going to answer any of my remaining questions in a more constructive way?,bitter_frustration,uncivil
+202437,160227,Are you going to answer any of my remaining questions in a more constructive way?,impatience,uncivil
+202437,160227,Are you going to answer any of my remaining questions in a more constructive way?,name_calling,uncivil
+202437,191235,Do any contributors get into the mood to take another look at software updates from my selection of change possibilities in a more constructive way?,name_calling,uncivil
+202437,191241,We don't have the time to wade through dozens of one-liner cleanup patches.,bitter_frustration,uncivil
+202437,191241,We don't have the time to wade through dozens of one-liner cleanup patches.,impatience,uncivil
+202437,191241,"One last time: either post per-driver patches with all the cleanups for a driver in a single patch, or a per-directory patch (drivers/media/pci, usb, etc) doing the same cleanup for all drivers in that directory.",impatience,uncivil
+202437,191275,would you get frightened still by any other change combination?,name_calling,uncivil
+202437,191275,We have got different preferences for a safe patch granularity.,bitter_frustration,uncivil
+202437,191275,There are communication difficulties to consider since your terse information from your conference meeting.,name_calling,uncivil
+202437,191275,"If you would insist on patch squashing, would you dare to use a development tool like quilt fold also on your own once more?",name_calling,uncivil
+202437,196318,Would you dare to apply any (of my) scripts for the semantic patch language directly on the whole directory for multi-media software?,name_calling,uncivil
+202437,196318,Can you handle bigger patches really better than similar patch series?,name_calling,uncivil
+202437,196318,Are there any further possibilities to consider around consequences from a general change resistance?,bitter_frustration,uncivil
+202437,196318,Will any development (or management) tools like quilt fold make the regrouping of possible update steps more convenient and safer?,bitter_frustration,uncivil
+202437,202446,Fix your tools before you send any more patches.,name_calling,uncivil
+202437,505099,"While we do not mind cleanup patches, the way you post them (one fix per file) is really annoying and takes us too much time to review.",impatience,uncivil
+202437,505099,"While we do not mind cleanup patches, the way you post them (one fix per file) is really annoying and takes us too much time to review.",name_calling,uncivil
+202437,505099,"I would also suggest that your time might be spent more productively if you would work on some more useful projects. There is more than enough to do. However, that's up to you.",mocking,uncivil
+202437,505099,"Feel free to repost, but only if you organize the patch as either fixing the same type of issue for a whole subdirectory (media/usb, media/pci, etc) or fixing all issues for a single driver.",threat,uncivil
+202437,505099,"Just so you know, I'll reject any future patch series that do not follow these rules.",bitter_frustration,uncivil
+202437,505099,Just use common sense when posting these things in the future.,bitter_frustration,uncivil
+202437,505099,I would also suggest that your time might be spent more productively if you would work on some more useful projects.,name_calling,uncivil
+202437,505193,Would you like to share any more information from this meeting?,bitter_frustration,uncivil
+202437,505195,"> Would you like to share any more information from this meeting???? I did that: either one patch per directory with the same type of change, or one patch per driver combining all the changes for that driver.",impatience,uncivil
+202437,505195,"Yes, and you were told not to do it like that again.",impatience,uncivil
+202437,513970,I find it very surprising that you rejected 146 useful update suggestions so easily.,mocking,uncivil
+202437,513970,I find it very surprising that you rejected 146 useful update suggestions so easily.,name_calling,uncivil
+202437,513970,Could your reaction have been different if the remarkable number of  change possibilities were sent by different authors (and not only me)?,name_calling,uncivil
+202437,513970,Will you accept increasing risks because of bigger patch sizes?,name_calling,uncivil
+202437,513970,How would you ever like to clean up stuff in affected source files which was accumulated (or preserved somehow) over years?,name_calling,uncivil
+202437,513970,Have you taken any other solution approaches into account than  a quick rejection?,bitter_frustration,uncivil
+202437,513970,Have you taken any other solution approaches into account than  a quick rejection?,name_calling,uncivil
+202437,745390,Would you like to answer my still remaining questions in any more constructive ways?,impatience,uncivil
+202437,745390,Would you like to answer my still remaining questions in any more constructive ways?,name_calling,uncivil
+210458,210459,"Wait, what?  Why would it do that, because it thinks dereferencing NULL is undefined behaviour and it can just do whatever it wants to?",bitter_frustration,uncivil
+210458,210459,"That feels crazy, as for these calls we know it will never be NULL because the previous call to debug fs_file_get() will always ensure it will be correct.",bitter_frustration,uncivil
+210458,210459,Papering over compiler foolishness is not something I like to do in kernel code if at all possible...,mocking,uncivil
+210458,210461,"Then fix the tool, the C code is correct :)",bitter_frustration,uncivil
+210458,210461,"Then tell clang not to do that, like we tell gcc not to do that as that is a foolish thing for a compiler to do when building the kernel.",bitter_frustration,uncivil
+210458,210461,"Then tell clang not to do that, like we tell gcc not to do that as that is a foolish thing for a compiler to do when building the kernel.",mocking,uncivil
+210458,210463,"Wait, clang does not have that?  That's crazy, how has this not been hit yet when building the kernel?",bitter_frustration,uncivil
+221804,221853,When you use explicit casting in printf() you are doing in 99.9% casessomething wrong.,name_calling,uncivil
+222860,223021,Since when do U-Boot patches go to LKML and dri-devel?,bitter_frustration,uncivil
+222860,223021,Since when do U-Boot patches go to LKML and dri-devel?,mocking,uncivil
+222860,223021,"Anyway, I'll try my best to ignore this series.",bitter_frustration,uncivil
+222860,223039,How many times are we going to allow copy-and-pasting the same driver?,bitter_frustration,uncivil
+222860,223039,How many times are we going to allow copy-and-pasting the same driver?,impatience,uncivil
+232313,234089,You'll need to send the patch to someone if you want it to be merged.,name_calling,uncivil
+232313,234089,Maintainers don't mine mailing lists for patches to apply.,mocking,uncivil
+239101,240255,"I never did get an answer about how the sg array is free'd in certain error paths (see FIXME:"" in the 2nd patch).""",bitter_frustration,uncivil
+245912,245916,"As per the in-kernel documentation, I am now allowed to make fun of you.",mocking,uncivil
+245912,245916,Please go read the documentation again...,impatience,uncivil
+245912,245916,You are trying to out smart the kernel by getting rid of a warning message that was explicitly put there for you to do something.,name_calling,uncivil
+245912,245916,I didn't put that warning in there for no good reason.,impatience,uncivil
+245912,245922,Then what? Shouldn't this result in probe deferral or something more useful instead of just being ignored ?,bitter_frustration,uncivil
+245912,245922,There is a lot of duplication in those functions.,impatience,uncivil
+254985,255085,You will have to be patient because this is a rather big change and itwill take quite some time to get sorted.,name_calling,uncivil
+258997,259457,"If people don't care enough about their code to even check the warnings, I'm not going to waste one second pulling the resulting garbage. It's that simple.",bitter_frustration,uncivil
+258997,259457,"If people don't care enough about their code to even check the warnings, I'm not going to waste one second pulling the resulting garbage. It's that simple.",name_calling,uncivil
+258997,259457,"If people don't care enough about their code to even check the warnings, I'm not going to waste one second pulling the resulting garbage. It's that simple.",threat,uncivil
+258997,260177,Could you please just merge the obvious fix from Arnd instead?,mocking,uncivil
+258997,260189,Can you fix it correctly by replacing the 'switch' by a 'if' instead of adding dead branches to please gcc?,mocking,uncivil
+259276,259299,Did you actually test this?,mocking,uncivil
+259276,259299,Did you actually test this?,name_calling,uncivil
+261377,261389,"This doesn't have to be on separate lines, as written, it just causes confusion.",bitter_frustration,uncivil
+261377,261389,your patch is corrupted to the point where any attenpt to fix it up on my side failed,bitter_frustration,uncivil
+261866,263843,"Sorry, but this is a hack to *try* to make multi-slot work and this isn't sufficient.",bitter_frustration,uncivil
+266017,266025,What actually took so long?,impatience,uncivil
+266017,266025,Could you analyze further instead of blindly putting the flag?,bitter_frustration,uncivil
+266017,266025,Could you analyze further instead of blindly putting the flag?,name_calling,uncivil
+266279,266313,let's not just start adding bloatware where not needed.,impatience,uncivil
+266279,266313,"Please notice that I'm fine if you want to submit potential Spectre variant 1 fixups, but if you're willing to do so, please provide an explanation about the potential threat scenarios that you're identifying at the code.",threat,uncivil
+266918,269136,"I'll remember all this for the next time (if next time there is,of course, I was already quite hesitant to spend time to prepare and send patches for these issues with enum/integer mix-up).",threat,uncivil
+281311,281957,"If it exists, it needs to be fixed.  If it doesn't exist, nothing needs to be done. Which is the case?",impatience,uncivil
+281311,281957,"Either it does exist, or it doesn't.",mocking,uncivil
+281311,283024,It looks like you are not actually sure what you are doing then.,mocking,uncivil
+281311,283024,It looks like you are not actually sure what you are doing then.,name_calling,uncivil
+289026,292839,"This all looks so hackish and ad-hoc that I would be tempted to give it an outright nack, but let's here more about why do we need this fiddling at all.",bitter_frustration,uncivil
+289026,292839,Try to look at previous discussions why it has been decided to have a separate hugetlb pages at all.,bitter_frustration,uncivil
+289026,292839,I am also quite confused why you keep distinguishing surplus hugetlb pages from regular preallocated ones.,name_calling,uncivil
+289026,292839,I've asked in other email so I guess I will get an answer there but let me just emphasize again that I absolutely detest a possibility to put hugetlb pages into the memcg mix.,impatience,uncivil
+289431,292003,"Where did this come from? XFS doesn't use the underlying blockdev address space, so this does nothing at all and should not be here.",bitter_frustration,uncivil
+289431,292003,"Where did this come from? XFS doesn't use the underlying blockdev address space, so this does nothing at all and should not be here.",mocking,uncivil
+303621,305468,The SPDX header is explicitly here to remove the license text and create a tag that is in a indirect reference to the license text in LICENSES. It's not going away.,bitter_frustration,uncivil
+303621,305468,I never said we were perfect reviewers. Feel free to help in the process.,bitter_frustration,uncivil
+306145,357688,But you did it again....,impatience,uncivil
+306145,357688,Your email client should not be forcing you to top post. So please don't.,bitter_frustration,uncivil
+306145,357688,Your email client should not be forcing you to top post. So please don't.,mocking,uncivil
+307410,349339,What you didn't notice is that split_remote() separates the colon whether there is a host or not. It's not passed to ssh or cat (or whatever) directly. So the change you propose will actually break the how it was designed.,name_calling,uncivil
+307410,349339,So the change you propose will actually break the how it was designed.,bitter_frustration,uncivil
+310967,311378,Making a non-fatal error fatal doesn't serve a useful purpose.,mocking,uncivil
+310967,311378,There are no unexpected results.,mocking,uncivil
+331266,331355,What is this crazy union for?,mocking,uncivil
+331266,331355,What is this crazy union for?,impatience,uncivil
+331266,331355,"Why are you messing around with raw ""kobject attributes?""",name_calling,uncivil
+331266,331355,"Why are you messing around with raw ""kobject attributes?""",impatience,uncivil
+331266,331355,"This is a device, you should never have to mess with sysfs calls or kobject calls or structures directly.",name_calling,uncivil
+331266,331355,"If you do, that's a huge hint something is wrong here.",name_calling,uncivil
+331266,331355,you need to document the heck out of this in the change log to help explain all of these odd design decisions.,name_calling,uncivil
+331266,331355,you need to document the heck out of this in the changelog to help explain all of these odd design decisions.,vulgarity,uncivil
+331266,331694,"This is an RFC series, it's not meant for you to take at this point,it's about discussing the overall approach to exposing BMC random tunables"" as explained in patch 0 of the series.""",name_calling,uncivil
+331266,331710,"Oh come on, putting a basic here is what this patch does comment should be part of every patch otherwise what is there to comment on if we don't know what is going on in the patch itself?",bitter_frustration,uncivil
+331266,331847,You can just read the patch which is... the documentation :),irony,uncivil
+331266,331847,You can just read the patch which is... the documentation :),name_calling,uncivil
+336834,337035,And all that for data that I've never needed and never even considered useful when looking at lockdep output.,mocking,uncivil
+336834,337035,You grow that structure from 64 bytes to 96 bytes and with that grow the static footprint of the kernel by 512k (in the very best case) possibly again breaking things like sparc (which have a strict limit on the kernel image size).,name_calling,uncivil
+336834,337316,It's likely because you infer about certain aspects which are not clearly stated in the deadlock report.,mocking,uncivil
+336834,337316,It's likely because you infer about certain aspects which are not clearly stated in the deadlock report.,name_calling,uncivil
+336834,337316,You likely also infer about the order of consuming the locks based on the contents of the stack dump associated to each lock.,mocking,uncivil
+336834,337316,You likely also infer about the order of consuming the locks based on the contents of the stack dump associated to each lock.,name_calling,uncivil
+358863,358900,"Furthermore, who the hell cares which callback has stepped into it?",vulgarity,uncivil
+358863,358900,"The first time it happened from getdents(2) in a 32bit process and that's all you'll ever get out of me"" seems to be less than helpful...""",bitter_frustration,uncivil
+358863,358900,"So all these return -E..."" in the instances are completely pointless",mocking,uncivil
+365796,367116,Don't see how you could compute this.,mocking,uncivil
+365796,367764,"Your control-bank-cfg seemed like having much room for improvement, and it would for sure raise questions on why it was implemented that way.",name_calling,uncivil
+372597,372959,"Please fix this, email a test patch to yourself, and do not resend the patch to this mailing list until you can successfully extract and cleanly apply the test patch you email to yourself.",name_calling,uncivil
+378505,378562,Again I'll ask: what is the performance when the log is made large enough that your benchmark is *not hammering the slow path*?,impatience,uncivil
+383199,392690,"Also, all your patches have the whitespace turned from tabs into spaces, making them impossible to be applied even if I wanted to :)",mocking,uncivil
+391895,397297,"I'll beg to differ, this isn't anywhere near something to consider merging.",bitter_frustration,uncivil
+391895,397297,"There are known scalability problems with the existing cgroup muck, you just made things a ton worse.",mocking,uncivil
+391895,397297,"There are known scalability problems with the existing cgroup muck, you just made things a ton worse.",name_calling,uncivil
+391895,397297,"That is the whole and only reason you did this, and it doesn't even begin to cover the requirements for it.",bitter_frustration,uncivil
+391895,397297,"That is the whole and only reason you did this, and it doesn't even begin to cover the requirements for it.",name_calling,uncivil
+391895,397297,Now explain to me how you're going to gang-schedule a VM with a good number of vCPU threads (say spanning a number of nodes) and preserving the rest of CFS without it turning into a massive trainwreck?,bitter_frustration,uncivil
+391895,397297,"Unless you have solid suggestions on how to deal with all of them, this is a complete non-starter.",name_calling,uncivil
+391895,397297,"Unless you have solid suggestions on how to deal with all of them, this is a complete non-starter.",threat,uncivil
+391895,397297,You don't even begin to outline how you preserve smp - nice fairness.,name_calling,uncivil
+391895,397297,Have you actually read your own code?,mocking,uncivil
+391895,397297,Have you actually read your own code?,name_calling,uncivil
+391895,397297,"All in all, I'm not inclined to consider this approach, it complicates an already overly complicated thing (cpu-cgroups) and has a ton of unresolved issues while at the same time it doesn't (and cannot) meet the goal it was made for.",impatience,uncivil
+391895,397297,"You gloss over a ton of details here, many of which are non trivial and marked broken in your patches.",name_calling,uncivil
+391895,397649,"Just because you find one example, where it is a bad idea, doesn't make it a bad thing in general.",name_calling,uncivil
+399771,400133,"How can you set a shared variable with no synchronization ? A bool is particularly dangerous here, at least on some arches.",name_calling,uncivil
+399771,401526,"Your patch adds a subtle possibility of future bugs, even if it runs fine today.",name_calling,uncivil
+402510,413538,It would be very helpful if you cc all involved people on the cover letter instead of just cc'ing your own pile of email addresses.,bitter_frustration,uncivil
+402510,413538,It would be very helpful if you cc all involved people on the cover letter instead of just cc'ing your own pile of email addresses.,name_calling,uncivil
+402510,413538,"This is really not helpful. The cover letter and the change logs should contain a summary of that discussion and a proper justification of the proposed change. Just saying 'sys admins might want to allow' is not useful at all, it's yet another 'I want a pony' thing.",bitter_frustration,uncivil
+402510,413538,All of this want's a proper documentation clearly explaining the risks and scope of these knobs per PMU.,bitter_frustration,uncivil
+402510,413538,Just throwing magic knobs at sysadmins and then saying 'its their problem to figure it out' is not acceptable.,bitter_frustration,uncivil
+402510,413538,"Just saying 'sysadmins might want to allow' is not useful at all, it's yet another 'I want a pony' thing.",mocking,uncivil
+402510,413650,Presumably you see adding fine grained control as diminishing the overall security rather than raising it? Could you explain why?,name_calling,uncivil
+402510,413698,You can add as many of yours as you want as long as everybody else is cc'ed.,name_calling,uncivil
+402510,413698,"Sure, and because you don't know you didn't bother to ask around and ignored the review request.",mocking,uncivil
+402510,413698,"Sure, and because you don't know you didn't bother to ask around and ignored the review request.",name_calling,uncivil
+402510,413698,You cannot expect that even competent sysadmins know offhand what which PMU might expose. And telling them 'Use Google' is just not the right thing to do.,bitter_frustration,uncivil
+402510,413698,You cannot expect that even competent sysadmins know offhand what which PMU might expose. And telling them 'Use Google' is just not the right thing to do.,name_calling,uncivil
+402510,413698,"If you can't explain and document it, then providing the knob is just fulfilling somebodys 'I want a pony' request.",name_calling,uncivil
+402510,413698,I did not say at all that this might be diminishing security. And the argumentation with 'incompetent sysadmins' is just the wrong attitude.,bitter_frustration,uncivil
+402510,413768,"Sure, but you also used the word pile and I would argue that made the rest of your sentence  after and including ""instead""  sound like it not only bothers you I forgot to Cc people on the cover letter  but it also bothers you I included a ""pile"" of my own addresses. If that wasn't your intention in the slightest then I apologise for misreading it.",name_calling,uncivil
+402510,413768,"Well it's not a pony, it is mechanism to avoid having to turn off all security. We can hopefully discuss it without ponies.",bitter_frustration,uncivil
+402510,413768,You are assuming my actions and motivations and constructing a story.,name_calling,uncivil
+402510,413768,"Note instead the time lapse between this and previous posting of the series, and if you want to assume something, assume things can get missed and forgotten without intent or malice.",impatience,uncivil
+402510,413768,"Note instead the time lapse between this and previous posting of the series, and if you want to assume something, assume things can get missed and forgotten without intent or malice.",name_calling,uncivil
+402510,413768,I was trying to guess your reasoning (cues in presumably and a lot of question marks) since it wasn't clear to me why is your position what it is.,bitter_frustration,uncivil
+402510,413768,We can hopefully discuss it without ponies.,mocking,uncivil
+402510,413778,I did not say that you mentioned google. But what is a sysadmin supposed to do when there is no documentation aside of using google? And not having documentation is basically the same thing as telling them to use google.,bitter_frustration,uncivil
+402510,413778,"If you want to make a pettifogger contest out of this discussion, then we can stop right here.",name_calling,uncivil
+402510,413778,Guessing my reasonings has nothing to do with you mentioning incompentent sysadmins.,name_calling,uncivil
+402510,413778,I explained it technically why just adding a knob without further explanation and analysis is not acceptable.,bitter_frustration,uncivil
+402510,414000,Ah only if google could simply answer all our questions!,irony,uncivil
+402510,414000,It's not like there is or isn't a security risk and that you can say that it is or it isn't in a global way.,name_calling,uncivil
+402510,414266,"I said clearly that I'm not opposed against making it configurable. But because there is no single answer, it's even more important to have proper documentation. And that's all I'm asking for aside of making it opt-in instead of a wholesale expose everything approach.",impatience,uncivil
+410867,414489,"Look, reviewing these are pretty stressful for me, because you aren't documenting your changes and in many cases the transformations look incorrect.",bitter_frustration,uncivil
+410867,414489,Please double check your work and resubmit this at some time in the not-too-near future.,bitter_frustration,uncivil
+422694,423291,"What is not proper about the existing comment? Yes yes  I *know* that GCC is not very intelligent about it and requires hand-holding  but blaming the existing comment for not *properly* marking an intentional fall through is ... rich."" ",bitter_frustration,uncivil
+422694,423291,"Considering the above added context, I have to say that this mindless change is not an improvement, as you have just destroyed the continued sentence from the previous comment.",bitter_frustration,uncivil
+422694,423291,"Considering the above added context, I have to say that this mindless change is not an improvement, as you have just destroyed the continued sentence from the previous comment.",name_calling,uncivil
+422694,423291,The big question is why you did not stop to think and consider the context?,bitter_frustration,uncivil
+422694,423291,The big question is why you did not stop to think and consider the context?,mocking,uncivil
+422694,423291,The big question is why you did not stop to think and consider the context?,name_calling,uncivil
+422694,423291,"Yes, I'm annoyed by mindless changes. Especially mindless changes aimed at improving readability while in fact making things less readable.",impatience,uncivil
+422694,423291,"TL,DR, if you are desperate to fix the problem with this fall through comment  please do so in a way that preserves overall readability.",name_calling,uncivil
+422694,423291,it would be nice to not blame the existing code for brain damage in GCC and various other static analyzers.,bitter_frustration,uncivil
+422694,423291,blaming the existing comment for not *properly* marking an intentional fall through is ... rich.,irony,uncivil
+422694,428645,It would have been so damn easy and it does not take a whole lot of imagination to quiet down GCC while keeping the comments readable.,bitter_frustration,uncivil
+424089,424518,What the heck does __visible do?,vulgarity,uncivil
+424089,424518,"Certainly, byte-at-a-time is a pretty lame implementation when the addresses are suitably aligned.",bitter_frustration,uncivil
+424089,424518,But I'm wondering who is actually using this code!,mocking,uncivil
+467091,471421,I think this discussion is starting to be counterproductive with arguing of both parts. Unfortunately I don't see anyone given their inputs too.,impatience,uncivil
+467091,471458,"I think you didn't read my reply carefully. I'm not saying I3C == USB, I'm just saying that the way you interact with an I3C from a SW PoV is not at all the same as you would do for an I2C device. Do you deny that?",name_calling,uncivil
+467091,471458,"Come on! All I've seen so far are complaints on tiny details, it definitely doesn't prevent you from adding new features.",name_calling,uncivil
+467091,479249,"But right now, you're telling me that we need to split the DW driver to prepare for features that have not even been discussed/proposed. That's what I'm complaining about.",bitter_frustration,uncivil
+467091,479249,"But right now, you're telling me that we need to split the DW driver to prepare for features that have not even been discussed/proposed. That's what I'm complaining about.",name_calling,uncivil
+467091,479249,"If you were adding support for slaves, and were doing this split as part of this patch series explaining that part of the code between slave and master can be shared, then we wouldn't have this debate.",bitter_frustration,uncivil
+467091,479249,"If you were adding support for slaves, and were doing this split as part of this patch series explaining that part of the code between slave and master can be shared, then we wouldn't have this debate.",name_calling,uncivil
+476403,477115,So I strongly disagree with this. Anybody that has trouble with 0/1 vs false/true needs to stay the heck away from C.,vulgarity,uncivil
+476403,477115,I would suggest we delete that stupid coccinelle scripts that generates these pointless warns.,bitter_frustration,uncivil
+476403,477115,I would suggest we delete that stupid coccinelle scripts that generates these pointless warns.,vulgarity,uncivil
+476403,477136,Not to mention that WARN is gramatically incorrect. We're not assigning 'bool' to 0/1 but the other way around. What crap..,impatience,uncivil
+476403,477136,Not to mention that WARN is gramatically incorrect. We're not assigning 'bool' to 0/1 but the other way around. What crap..,vulgarity,uncivil
+476403,478120,"The kernel is not the place to try and abstract such stuff, C is our portable assembler. We muck with hardware, we'd better know how the heck it works.",vulgarity,uncivil
+482005,482038,Note that this patch does *not* remove the nasty trap caused by the garbage in question - struct file can be freed before we even return from->unlocked_ioctl().  Could you describe in details the desired behaviour of this interface?,bitter_frustration,uncivil
+482005,482038,Note that this patch does *not* remove the nasty trap caused by the garbage in question - struct file can be freed before we even return from->unlocked_ioctl().  Could you describe in details the desired behaviour of this interface?,vulgarity,uncivil
+498594,573986,Care to tell what's a lie instead of making bold statements?,bitter_frustration,uncivil
+498594,573990,Take a care to look at the patch I submitted? Lie:# A system with an up to date kernel is protected against attacks from # malicious user space applications. 3GB system running 32bit kernel is not protected. Same is true for for really big 64bit systems.,bitter_frustration,uncivil
+498594,574882,Care to explain why you are assuming this to be the case?,name_calling,uncivil
+498594,574882,"Sorry, that we weren't able to live up to your high standards.",irony,uncivil
+498594,574882,Calling this a lie is a completly unjustified personal attack on those who spent quite a lot of time on writing up documentation in the first place. It's suggesting that this document was written with malicious intent and the purpose of deceiving someone.,bitter_frustration,uncivil
+498594,576302,"So how should it be called? I initally used less strong words, only to get ""Care to tell what's a lie instead of making bold statements?"" back. Also look at the timing of the thread.",bitter_frustration,uncivil
+498594,590551,You called it a lie from the very beginning or what do you think made me tell you that?,bitter_frustration,uncivil
+498594,590551,You called it a lie from the very beginning or what do you think made me tell you that?,name_calling,uncivil
+498594,590551,If you want to provide more accurate documentation then you better come up with something which is helpful instead of completely useless blurb like the below,bitter_frustration,uncivil
+498594,590551,If you want to provide more accurate documentation then you better come up with something which is helpful instead of completely useless blurb like the below,name_calling,uncivil
+498594,590551,If you want to provide more accurate documentation then you better come up with something which is helpful instead of completely useless blurb like the below,threat,uncivil
+498594,770007,"Actually, I still call it a lie. Document clearly says that bug is fixed in non-virtualized cases, when in fact it depends on PAE and limited memory.",bitter_frustration,uncivil
+498594,770007,At this point I want you to fix it yourself.,name_calling,uncivil
+498594,770007,"Lying about security bugs being fixed when they are not is not cool. I tried to be helpful and submit a patch, but I don't feel like you are cooperating on getting the patch applied.",bitter_frustration,uncivil
+511533,512783,"Again, no.",impatience,uncivil
+522705,522783,"I would drop this patch for being too ugly and if nothing else, for lack of users (epoll will no longer need dlock).",impatience,uncivil
+539613,546377,"Since when is the cover letter mandatory? I understand that is helps for a complicated patch set to explain the problem and solution in the cover letter, but for this simple test case addition what's the point? And there is nothing forcing a cover letter in https://www.kernel.org/doc/html/v4.20/process/submitting-patches.html",bitter_frustration,uncivil
+541450,541515,I don't think not fixing it because it's not fixed yet is a good reason to keep things the way they are. But maybe that's just me. Given that the structure has already been extended several times  there is pretty much nothing to keep this from happening again and again.,impatience,uncivil
+541450,541516,There probably is a decent compromise to find between not accepting a single additional byte and accepting several GB.For example how likely is it that the growth of this structure make it go over a page? I would hope not at all.,bitter_frustration,uncivil
+541450,542126,"Thats a misleading statement.  We've never supported running newer applications on older kernels, and no one is forcing anyone to use the lksctp-tools library,I was only suggesting that, if we were to support this compatibility, that might be a place to offer it.",bitter_frustration,uncivil
+541450,542126,"Also misleading, as it assumes that we're not intentionally doing this.  I get wanting to support running applications built for newer kernels on older kernels, but thats just not something that we do, and to say thats broken is misleading.  Older applications are required to run on newer kernels, but not vice versa, which is what you are asking for.",bitter_frustration,uncivil
+541450,543076,"I won't disagree about the niceness of versioning, but that ship has sailed.",irony,uncivil
+541450,544269,What a complete mess we have here.,impatience,uncivil
+546823,547238,Looking more flexible does not make it more correct.,bitter_frustration,uncivil
+546823,547238,Looking more flexible does not make it more correct.,mocking,uncivil
+72369,470502,"Nothing prevents - true, but that's plainly wrong from OS point of view to grab physical ranges for something without knowing what's actually behind on that platform.",mocking,uncivil
+72369,470502,I think we shouldn't consider this as a valid thing to do and don't try to workaround initially incorrect code.,mocking,uncivil
