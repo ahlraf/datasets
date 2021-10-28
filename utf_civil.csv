@@ -1,0 +1,118 @@
+﻿thread_id,email_id,quotation,quotation_code,email_final_code
+152625,156871,"Not perfect, but a first solution.",humility,uncivil
+152625,157636,"When one of the author of the original document objected, i felt it is better to back off. But if there is a consensus, i will proceed.",oppression,civil
+152625,157636,"Initially i was sceptical of rst & once instead of hitting the fly, hit make htmldocs on the keyboard :)  and the opinion about it was changed. It was easy to navigate through various docs & the realized that various topics (& many) were present (yes it was there earlier also but had to dive inside Documentation & search   but now it was docs coming after you  that is myopinion.",appreciation_excitement,civil
+152625,157636,"It was thought that rst conversion could be done quickly, but since this was my first attempt with rst, had to put some effort to get a not so bad output, even if this patch dies, i am happy to have learnt rst conversion to some extent.  ",humility,civil
+152625,157636,"instead of hitting the fly, hit make htmldocs on the keyboard :)",friendly_joke,civil
+165231,165261,"My point is, we might as well take the opportunity to fix this right away, don't you think?",considerateness,civil
+167856,174594,Thanks for the detailed answer about what you have in mind.,appreciation_excitement,civil
+168169,173259,"Thanks a lot for all this work! It was long overdue and it is nice to see the project finally getting to an end, after passing into so many hands!",appreciation_excitement,civil
+168169,173259,"All this time, I thought these parameters were for power gating... I also did not expect that clock gating had to be disabled before we could program them. Great find!",appreciation_excitement,civil
+168169,173259,"Aside from all these nitpicks, the approach is quite self contained and I like the following patches. Well done!",appreciation_excitement,civil
+168169,173259,"If you agree with having a single enable bit for CG, then a simple: Clockgating status: (boot|optimized) would work perfectly.",humility,civil
+168169,173259,I am not sure I understand the purpose of this level here.,humility,civil
+169133,179802,"Sorry about being late, just returned home and am trying to get all the backlogs under control.",sincere_apologies,civil
+169133,179802,"If it's worth the effort at this point, I don't know.",humility,civil
+169133,193114,"But if you have a better idea to fix it, I am glad to see it. Anyway, this issue have to be fixed.",appreciation_excitement,civil
+169133,193114,"But if you have a better idea to fix it, I am glad to see it.",humility,civil
+169133,204633,"Do not use attachments to fix this problem, the patch must be inline after your commit message and signoffs.",commanding,uncivil
+170193,188745,Thanks for the review and apologies for the delay.,appreciation_excitement,civil
+170193,188745,Thanks for the review and apologies for the delay.,humility,civil
+170193,188751,"Can you please point me to this function/macro? I don't seem to be able to find it, at least not in 4.15",humility,uncivil
+180488,180837,"Sorry, I missed that. If mmap_sem is not needed for migrate_pages(), please ignore this patch.",sincere_apologies,civil
+183468,183472,Thanks for testing this and letting me know.,appreciation_excitement,civil
+202437,191241,"I prefer the first approach, but it's up to you.",considerateness,uncivil
+202437,202446,Use normal patch styles. Fix your tools before you send any more patches.,commanding,uncivil
+207400,207934,Cool. I would say this is done right.,appreciation_excitement,civil
+207400,208102,"oops, did not mean to submit that",sincere_apologies,civil
+207400,208141,Thanks for catching that.,appreciation_excitement,civil
+207400,208159,"yes, that static arrays are not very forward-thinking and yes my arrays are not consistent.",humility,civil
+210458,210459,"So this is a case of the compiler trying to be smarter than it really is, and getting things totally wrong :(",sadness,uncivil
+216128,216130,Can you possibly send the entire series again and CC all patches to linux-acpi and fix the kbuild warnings if the are relevant for that matter?,considerateness,civil
+216128,216133,Sorry for being dense.,sincere_apologies,civil
+216128,216133,I can't find mention of amdcz in Linus's tree nor linux-next.,humility,civil
+222860,223039,I'm going to be real disappointed if we see another fork get merged.,sadness,uncivil
+222860,223039,"(IOW, I would say over my dead body  but I have no power here.)",oppression,uncivil
+222860,230472,Can you add a commit message explaining why you add a specific defconfig for this board.,considerateness,civil
+230843,231058,"In any case, if you insist, I can try to rework the whole stuff implementing module_finalize().",oppression,civil
+231231,232204,So make it fit by returning an unsigned int.,commanding,civil
+239101,240255,I'll be pretty frustrated if you submit v2 that is blind to the kinds of changes I made.,sadness,uncivil
+239101,240255,"I never did get an answer about how the sg array is free'd in certain error paths (see FIXME:"" in the 2nd patch).""",hope_to_get_feedback,uncivil
+239101,240572,"Thank you so much for many style, formatting and other issues fixes and also for integration of 'check_at_most_once' patch, it saved me several review iterations.",appreciation_excitement,civil
+239101,240572,"Regarding free of sg in two error paths, you were correct.",humility,civil
+245912,245922,Would it be possible to find common code and use functions for it instead of duplicating everything several times ?,considerateness,uncivil
+245912,245953,All of this code is for debugging only. Do you want to put it behind some kind of conditional?,considerateness,civil
+245912,245953,"I'm only just learning about PECI, but I do have some general comments below.",humility,civil
+258997,259513,I'm really sorry for this.,sincere_apologies,civil
+258997,260193,I'm not the one that added this switch statement (it has been there since 2011) and I would be happy to remove it.,appreciation_excitement,civil
+259276,259489,"I admit I am not familiar with this driver.I did not know this driver is only loaded during system boot-up time, I thought this driver can be loaded as a kernel module (like many drivers) after system booting.After knowing this, I admit my patch is not proper, sorry...",humility,civil
+259276,259489,"After knowing this, I admit my patch is not proper, sorry...",sincere_apologies,civil
+266017,266029,"Well, I am not sure. Could you please give me hints, how to debug this further? Is there some debug flag?",humility,civil
+266279,266313,Please enlighten me: how do you think this could be exploited?,humility,uncivil
+266279,266331,I see I've missed some obvious things that you've pointed out here. I'll mark these warnings as False Positives and take your points into account for the analysis of the rest of the Spectre issues reported by Smatch.,humility,civil
+266279,266331,Sorry for the noise and thanks for the feedback.,sincere_apologies,civil
+266279,266334,Sorry for the noise.,sincere_apologies,civil
+266279,267299,"Ok, a poor man approach would be to pass the array directly to the core and let the implementation there to implement the array fetch logic  calling array_index_nospec() there  but I wonder if are there any other way that won't require too much code churn.",friendly_joke,civil
+266918,267111,make this a true patch series,commanding,civil
+266918,267111,fix the indentation of the functions whose arguments span multiple lines as has been pointed out to you in patch feedback.,commanding,civil
+266918,267111,Luc please don't submit such a huge number of patches all at one time.,commanding,civil
+266918,269136,"It seems it was a bad guess, andyes, I see the point of having a series for this.",humility,uncivil
+266918,269136,"Sorry for the annoyance,",sincere_apologies,uncivil
+289026,271213,"Thanks to the interaction up to here, I understood that my solution is inappropriate. I will look for another way.",humility,civil
+289026,271213,"As you said, it must be an alien.",friendly_joke,civil
+289026,291846,"It would be good to get comments from people more cgroup knowledgeable, and especially from those involved in the decision to do separate hugetlb control.",hope_to_get_feedback,civil
+289026,291846,"My cgroup experience and knowledge is extremely limited, but it does not appear that any other resource can be controlled by multiple controllers.",humility,civil
+289026,292549,I am sorry that I didn't join the discussion for the previous version but time just didn't allow that. So sorry if I am repeating something already sorted out.,sincere_apologies,civil
+289026,292549,So I would argue that you have quite a good knowlege of the setup. If you need a greater flexibility then just do not use hugetlb at all and rely on THP.,considerateness,civil
+289026,294078,"I could not understand the intention of this question, sorry.",humility,civil
+289026,294078,I will completely apologize if my way of thinking is wrong.,humility,civil
+289026,294078,It would be greatly appreciated if you could mention why we can not charge surplus hugepages to memcg.,considerateness,civil
+289026,294078,Could you explain what you were concerned about?,considerateness,civil
+289026,294078,I apologize for having confused.,sincere_apologies,civil
+289431,289688,I'm not sure I understand what you intend here.,humility,civil
+289431,289688,I'm fine with either approach.,considerateness,civil
+306145,317171,wrap your lines at around 75 characters,commanding,civil
+307410,307390,"Oops, sorry, I double posted patch 5.",sincere_apologies,civil
+307410,311549,"If you have a better way to fix this, I'd be glad to hear it.",humility,civil
+314071,314224,"So I'm certainly in favor of this patch landing in mainline, but you should be aware that there may be some opposition to it.",considerateness,civil
+331266,331339,I can't take patches without any changelog text at all :(,sadness,civil
+331266,331355,That's an oddly-hard-coded array size for no good reason :(,sadness,uncivil
+336834,337316,I still hope that I can get some feedback from community regarding the actual cpufreq-related issue pointed out in the splat.,hope_to_get_feedback,uncivil
+346223,347267,"In other words, I'm trying to understand how much benefit this patchset will provide to our users as a whole.",considerateness,civil
+347183,348381,"Hopefully I'm not missing anything here, but this doesn't really make any sense. I'm not sure I explained myself as well as I thought I did.",humility,civil
+347183,348381,"To behonest, I had to double check this about literally 20 times to make sure I was actually understanding this issue correctly.",humility,civil
+347183,348381,"Turns out I was missing a couple of parts, so I'm going to try again at explaining this using a diagram that shows the various threads running concurrently",humility,civil
+347183,348381,"Hopefully I explained that better this time, I'll definitely make sure to actually include that diagram in the patch.",humility,civil
+347183,348381,"As for whether or not this patch is even the right solution, I will need to confirm that tommorrow (if you don't think it is still, please feel free to say so!) because it's getting late here.",considerateness,civil
+347183,348381,"As for whether or not this patch is even the right solution, I will need to confirm that tommorrow (if you don't think it is still, please feel free to say so!) because it's getting late here.",humility,civil
+347183,348381,phew. that took a LONG time to come up with.,friendly_joke,civil
+347183,349692,"First of all, I was mistaken when I wrote above that a check for !drm_kms_helper_is_poll_worker() would solve the problem.  Sorry!",humility,civil
+347183,349692,"First of all, I was mistaken when I wrote above that a check for !drm_kms_helper_is_poll_worker() would solve the problem.  Sorry!",sincere_apologies,civil
+365796,367141,"Just a blind shot, without going into details - could you please check if led-sources property documented in the common LED bindings couldn't help here?",considerateness,civil
+365796,367690,This is better than my proposal.,humility,civil
+368515,368789,"I welcome this feature, been wanting it for some time now.",appreciation_excitement,civil
+368515,368789,Having a CODE_PAGE_SIZE is therefore useful. I am happy adding it on top on your proposal.,appreciation_excitement,civil
+374095,374559,Good find! I'll queue this for the next fixes-pull-request.,appreciation_excitement,civil
+377230,377461,"FWIW, can you post the actual profile you are seeing in the commit message? That helps us identify similar problems in the future, and it lets us know what paths are leading to the transaction reservation contention. i.e. this may not even be a problem with the transaction reservation code itself.",considerateness,civil
+377230,378511,Thanks for your detailed review of the patch. I now have a better understanding of what should and shouldn't be done.,humility,civil
+378505,379417,"Can you please re-run and report the results for each patch on the ramdisk setup? And, please, include the mkfs.xfs or xfs_info output for the ramdisk filesystem so I can see /exactly/ how much concurrency the filesystems are providing to the benchmark you are running.",considerateness,civil
+379138,379657,I like the idea and I think it's good direction to go,appreciation_excitement,civil
+390394,390741,"Sorry but I don't like imposing a run-time check on everybody when stack-based requests are the odd ones out.  If we're going to make this a run-time check (I'd much prefer a compile-time check, but I understand that this may involve too much churn), then please do it for stack-based request users only.",considerateness,civil
+391895,394633,"I am happy to do any further debugging I can do, or try patches on top of those posted on the mailing list.",appreciation_excitement,civil
+391895,397297,And then people will complain again that partitioning a system isn't dynamic enough and we need magic :/,sadness,uncivil
+391895,397649,"Even if you're not inclined -- at this stage, if I may be so bold :) --your feedback is valuable. Thank you for that.",appreciation_excitement,uncivil
+391895,397649,"Even if you're not inclined -- at this stage, if I may be so bold :)",humility,uncivil
+391895,397649,"Bye bye interactivity. That is, what I call intrusive.",friendly_joke,uncivil
+391895,397649,"Do you believe me now, that L1TF is not the whole and only reason"" I did this? :D""",friendly_joke,uncivil
+391895,397649,Mm... there is certainly room for interpretation. :),friendly_joke,uncivil
+399771,401526,"Do not pave the way for future bugs, make your code robust, please.",commanding,uncivil
+402510,413650,"I accept it was by bad to miss adding Cc's on the cover letter,",humility,uncivil
+402510,413650,my own email addresses hopefully should not bother you.,sadness,uncivil
+431048,432750,There seems to be a disconnect between what I am trying to communicate and what I perceive you to have understood.,humility,civil
+431048,432750,I'll add comments below to try to make more clear what I'm trying to say.,considerateness,civil
+467091,471458,"I'm not saying I'm always right, but I need to understand the problems you're trying to solve to take a decision, and I don't think you initially gave all the details I needed to understand your PoV.",humility,uncivil
+498594,574206,I would really like to get an ack from the people who have been deep into this first.,hope_to_get_feedback,civil
+521470,533953,"I might be wrong, and if that's not the case I can take a look deeper and the end of the week.",humility,civil
+539613,546296,Also use tag selftests/tpm2 instead of having two tags in the short summaries. Now they look a bit weird.,commanding,civil
+541450,541515,I don't think not fixing it because it's not fixed yet is a good reason to keep things the way they are. But maybe that's just me.,humility,uncivil
+571417,571702,This is phenomenal. Thank you so much for digging into this.,appreciation_excitement,civil
